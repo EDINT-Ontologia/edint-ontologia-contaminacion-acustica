@@ -2,6 +2,11 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="color-scheme" content="dark light">
+<title>Ontología EDINT de Contaminación Acústica</title>
+
+<link rel="icon" type="image/png" href="resources/rdf.icon"/>
+
 <link rel="stylesheet" href="resources/primer.css" media="screen"/>
 <link rel="stylesheet" href="resources/rec.css" media="screen"/>
 <link rel="stylesheet" href="resources/extra.css" media="screen"/>
@@ -9,21 +14,27 @@
 <link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
 <link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
 <link rel="stylesheet" href="resources/slider.css" media="screen"/>
-<meta name="color-scheme" content="dark light">
-<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
-	<dark-mode-toggle class="slider"></dark-mode-toggle>
-</div>
-<link rel="icon" type="image/png" href="resources/rdf.icon"/> <title>Ontología EDINT de Contaminación Acústica</title>
+<link rel="stylesheet" href="resources/codemirror.css" media="screen"/>
 
+<script src="resources/codemirror.js"></script>
+<script src="resources/matchbrackets.js"></script>
+<script src="resources/turtle.js"></script>
+<script type="module" src="resources/dark-mode-toggle.mjs"></script>
 
 <!-- SCHEMA.ORG METADATA -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/","name":"Ontología EDINT de Contaminación Acústica", "headline":"Document describing the ontology http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/", "dateReleased":"Tue Mar 31 10:17:22 CEST 2026", "dateModified":"2026-03-27", "version":"0.1.0", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Daniel Doña"},{"@type":"Person","name":"Edna Ruckhaus"},{"@type":"Person","name":"Lucía Sánchez"},{"@type":"Person","name":"Maria del Socorro Bernardos"},{"@type":"Person","name":"Oscar Corcho"}]}</script>
 
-<script src="resources/jquery.js"></script> 
-<script src="resources/marked.min.js"></script> 
-    <script> 
+<script src="resources/jquery.js"></script>
+<script src="resources/marked.min.js"></script>
+<script>
 function loadHash() {
-  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+  jQuery(".markdown").each(function(){
+    // No procesar bloques que contengan un <textarea> (ejemplos de código con CodeMirror)
+    if (jQuery(this).find('textarea').length > 0) {
+      return;
+    }
+    jQuery(this).after(marked.parse(jQuery(this).text())).remove();
+  });
 	var hash = location.hash;
 	if($(hash).offset()!=null){
 	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
@@ -51,22 +62,26 @@ function loadTOC(){
 		}
 	  });
 	  t+='</ul>';
-	  $("#toc").html(t); 
+	  $("#toc").html(t);
 }
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
  };    $(function(){
-      $("#abstract").load("sections/abstract-es.html"); 
-      $("#introduction").load("sections/introduction-es.html"); 
-      $("#nstable").load("sections/ns-es.html"); 
-      $("#overview").load("sections/overview-es.html"); 
-      $("#description").load("sections/description-es.html"); 
-      $("#crossref").load("sections/crossref-es.html", null, loadHash); 
+      $("#abstract").load("sections/abstract-es.html");
+      $("#introduction").load("sections/introduction-es.html");
+      $("#nstable").load("sections/ns-es.html");
+      $("#overview").load("sections/overview-es.html");
+      $("#description").load("sections/description-es.html");
+      $("#crossref").load("sections/crossref-es.html", null, loadHash);
     });
-    </script> 
-  </head> 
+</script>
+</head>
 
 <body>
+<div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+
 <div class="container">
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> <a href="index-es.html"><b>es</b></a> </div>
