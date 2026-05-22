@@ -47,7 +47,7 @@ edintnoiseratetype:LAeq a skos:Concept ;
   skos:prefLabel "LAeq"@en ;
   skos:prefLabel "LAeq"@es ;
   skos:definition "Nivel continuo equivalente con ponderación frecuencial A, que es el nivel de ruido supuesto constante y continuo a lo largo de un periodo de tiempo, que se corresponde con la misma cantidad de energía que aquel nivel real variable medido en el mismo periodo"@es ;
-  skos:definition "A-weighted equivalent continuous sound level, which is the noise level assumed to be constant and continuous over a period of time, corresponding to the same amount of energy as the actual time-varying level measured during that same period" @en .
+  skos:definition "A-weighted equivalent continuous sound level, which is the noise level assumed to be constant and continuous over a period of time, corresponding to the same amount of energy as the actual time-varying level measured during that same period"@en .
 
 edintnoiseratetype:LAS01 a skos:Concept ;
   skos:inScheme edintkos:NoiseRateType ;
@@ -89,4 +89,4 @@ edintnoiseratetype:LAw a skos:Concept ;
   skos:prefLabel "LAw"@en ;
   skos:prefLabel "LAw"@es ;
   skos:definition "Índice de vibración que se utiliza para evaluar la molestia, los efectos nocivos y los niveles de vibración máximos, que se producen durante el periodo temporal de evaluación (diurno, nocturno), en el espacio interior de edificios"@es ;
-  skos:definition "Vibration rate used to assess discomfort, harmful effects, and maximum vibration levels, occurring during the assessment time period (daytime, night-time), within the indoor space of buildings" @en .
+  skos:definition "Vibration rate used to assess discomfort, harmful effects, and maximum vibration levels, occurring during the assessment time period (daytime, night-time), within the indoor space of buildings"@en .
