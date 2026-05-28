@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix edintmed: <http://vocab.linkeddata.es/datosabiertos/def/medioambiente/> .
+@prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
+
+@prefix edintnoisetimecon: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+edintkos:NoiseTimeConstantType a skos:ConceptScheme ; 
+    dct:issued "2026-03-27"^^xsd:date ;
+    dct:modified "2026-03-27"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the ontologies from the EDINT data space."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por las ontologías del espacio de datos EDINT."@es ;
+    rdfs:label "Type of time constant for sound pressure level measurement, i.e., how quickly the equipment responds to changes in sound."@en ;
+    rdfs:label "Tipo de constante de tiempo para medición del nivel de presión sonora, es decir, cómo de rápido responde el equipo a los cambios del sonido."@es ;
+    dct:title "Conceptual scheme grouping types of sound level meter time constant"@en ;
+    dct:title "Esquema de conceptos que agrupa tipos de constante de tiempo del nivel de presión sonora."@es ;
+	skos:note "It makes no sense for equivalent (including day, evening and night) or peak levels, included in http://vocab.linkeddata.es/datosabiertos/kos/edint/ReferenceInterval/"@en ;
+	skos:note "No tiene sentido para niveles equivalentes (incluidos de día, de tarde y de noche) o de pico, incluidos en http://vocab.linkeddata.es/datosabiertos/kos/edint/ReferenceInterval/."@es .
+
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+edintnoisetimecon:Slow a skos:Concept ;
+  skos:inScheme edintkos:NoiseTimeConstantType ;
+  skos:notation: "S" ;
+  skos:prefLabel "Lenta"@es ;
+  skos:prefLabel "Slow"@en ;
+  skos:definition "Constante de tiempo lenta (≈ 1 segundo). Reduce la influencia de variaciones rápidas"@es ;
+  skos:definition "Slow time constant (≈ 1 second). It reduces the influence of rapid variations." @en .
+  
+edintnoisetimecon:Fast a skos:Concept ;
+  skos:inScheme edintkos:NoiseTimeConstantType ;
+  skos:notation: "F" ;
+  skos:prefLabel "Rápida"@es ;
+  skos:prefLabel "Fast"@en ;
+  skos:definition "Constante de tiempo rápida (≈ 125 ms). Detecta cambios rápidos del sonido"@es ;
+  skos:definition "Fast time constant (≈ 125 ms). It detects rapid changes in sound."@en .
+
+edintnoisetimecon:Impulse a skos:Concept ;
+  skos:inScheme edintkos:NoiseTimeConstantType ;
+  skos:notation: "I" ;
+  skos:prefLabel "Impulso"@es ;
+  skos:prefLabel "Impulse"@en ;
+  skos:definition "Constante de tiempo de impulso. Diseñada para ruidos de impulso (golpes, explosiones)"@es ;
+  skos:definition "Impulse time constant. Designed for impulse noises (knocks, explosions)"@en .
+  

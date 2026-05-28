@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix edintmed: <http://vocab.linkeddata.es/datosabiertos/def/medioambiente/> .
+@prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
+
+@prefix edintnoiserefint: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+edintkos:NoiseReferenceInterval a skos:ConceptScheme ; 
+    dct:issued "2026-03-27"^^xsd:date ;
+    dct:modified "2026-03-27"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the ontologies from the EDINT data space."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por las ontologías del espacio de datos EDINT."@es ;
+    rdfs:label "Reference interval"@en ;
+    rdfs:label "Intervalo de referencia"@es ;
+    dct:title "Concept scheme grouping types of mesaurement periods for noise observations"@en ;
+    dct:title "Esquema de conceptos que agrupa tipos de periodos de medición para observaciones de calidad acústica"@es .
+
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+edintnoiserefint:EquivalentLevel a skos:Concept ;
+  skos:inScheme edintkos:NoiseReferenceInterval ;
+  skos:notation: "eq" ;
+  skos:prefLabel "Equivalent level"@en ;
+  skos:prefLabel "Nivel equivalente"@es ;
+  skos:definition "Nivel continuo constante de presión sonora a lo largo de un periodo de tiempo, que se corresponde con la misma cantidad de energía acústica total que el ruido real variable medido en ese periodo"@es ;
+  skos:definition "The noise level assumed to be constant and continuous over a period of time, corresponding to the same amount of energy as the actual time-varying level measured during that same period" @en ;.
+  
+
+edintnoiserefint:Day_evening_night a skos:Concept ;
+  skos:inScheme edintkos:NoiseReferenceInterval ;
+  skos:notation: "den" ;
+  skos:prefLabel "Day-evening-night level"@en ;
+  skos:prefLabel "Nivel de dia-tarde-noche"@es ;
+  skos:definition "Nivel equivalente durante el día completo (día, tarde y noche), teniendo en cuenta toda la variación del sonido a lo largo de un periodo que incluye uno o varios días."@es ;
+  skos:definition "Equivalent level throughout the whole day (day, evening and night), taking into account all the variation of the sound over a period that includes one or more days."@en .
+
+edintnoiserefint:Day a skos:Concept ;
+  skos:inScheme edintkos:NoiseReferenceInterval ;
+  skos:notation: "d" ;
+  skos:prefLabel "Day level"@en ;
+  skos:prefLabel "Nivel de día"@es ;
+  skos:definition "Nivel equivalente durante el día (de 7:00 a 19:00), teniendo en cuenta toda la variación del sonido a lo largo de un periodo que incluye uno o varios días."@es ;
+  skos:definition "Equivalent level throughout the day (from 7:00 to 19:00), taking into account all the variation of the sound over a period that includes one or more days."@en .
+
+edintnoiserefint:Evening a skos:Concept ;
+  skos:inScheme edintkos:NoiseReferenceInterval ;
+  skos:notation: "e" ;
+  skos:prefLabel "Evening level"@en ;
+  skos:prefLabel "Nivel de tarde"@es ;
+  skos:definition "Nivel equivalente durante la tarde (de 19:00 a 23:00), teniendo en cuenta toda la variación del sonido a lo largo de un periodo que incluye uno o varios días."@es ;
+  skos:definition "Equivalent level throughout the day (from 19:00 to 23:00), taking into account all the variation of the sound over a period that includes one or more days."@en .
+  
+edintnoiserefint:Night a skos:Concept ;
+  skos:inScheme edintkos:NoiseReferenceInterval ;
+  skos:notation: "n" ;
+  skos:prefLabel "Night level"@en ;
+  skos:prefLabel "Nivel de noche"@es ;
+  skos:definition "Nivel equivalente durante la noche (de 23:00 a 7:00), teniendo en cuenta toda la variación del sonido a lo largo de un periodo que incluye uno o varios días."@es ;
+  skos:definition "Equivalent level throughout the night (from 23:00 to 7:00), taking into account all the variation of the sound over a period that includes one or more days.@en .
+  
+edintnoiserefint:PeakLevel a skos:Concept ;
+  skos:inScheme edintkos:NoiseReferenceInterval ;
+  skos:notation: "peak" ;
+  skos:note "No tiene en cuenta un periodo de tiempo"@es ;
+  skos:note "It does not take into account a time period"
+  skos:prefLabel "Nivel pico"@es ;
+  skos:prefLabel "Peak level"@en ;
+  skos:definition "Pico instantáneo del nivel de presión sonora."@es ;
+  skos:definition "Peak of the sound pressure level"@en .

@@ -5,7 +5,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix edintmed: <http://vocab.linkeddata.es/datosabiertos/def/medioambiente#> .
+@prefix edintmed: <http://vocab.linkeddata.es/datosabiertos/def/medioambiente/> .
 @prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
 
 @prefix edintnoiseratetype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType/> .
@@ -22,12 +22,14 @@ edintkos:NoiseRateType a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the ontologies from the EDINT data space."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por las ontologías del espacio de datos EDINT."@es ;
-    rdfs:label "Type of noise or vibration rate"@en ;
-    rdfs:label "Tipo de índice de ruido o vibración"@es ;
-    dct:title "Concept scheme grouping types of noise or vibration rate"@en ;
-    dct:title "Esquema de conceptos que agrupa tipos de índice de ruido o vibración"@es ;
+    rdfs:label "Type of rate for sound pressure level"@en ;
+    rdfs:label "Tipo de índice para el nivel de presión sonora"@es ;
+    dct:title "Concept scheme grouping types of rate for sound pressure level"@en ;
+    dct:title "Esquema de conceptos que agrupa tipos de índice para el nivel de presión sonora"@es ;
     skos:note "Values currently based on the list of values included in http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tipo-medicion-acustica"@en ;
     skos:note "Valores basados inicialmente en la lista de valores de http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tipo-medicion-acustica"@es .
+
+
 
 #################################################################
 #
@@ -35,58 +37,59 @@ edintkos:NoiseRateType a skos:ConceptScheme ;
 #
 #################################################################
 
-edintnoiseratetype:LAeq24 a skos:Concept ;
+edintnoiseratetype:max a skos:Concept ;
   skos:inScheme edintkos:NoiseRateType ;
-  skos:prefLabel "LAeq24"@en ;
-  skos:prefLabel "LAeq24"@es ;
-  skos:definition "Nivel sonoro medio a largo plazo ponderado A, determinado a lo largo de todos los períodos diarios (24 horas) del mes"@es ;
-  skos:definition "Long-term A-weighted average sound level, determined over all daily (24-hour) periods of the month"@en .
+  skos:notation: "max" ;
+  skos:prefLabel "maximum"@en ;
+  skos:prefLabel "máximo"@es ;
+  skos:definition "Nivel de presión sonora máximo"@es ;
+  skos:definition "Maximum sound pressure level"@en .
+  
+edintnoiseratetype:min a skos:Concept ;
+  skos:inScheme edintkos:NoiseRateType ;
+  skos:prefLabel "minimum"@en ;
+  skos:prefLabel "mínimo"@es ;
+  skos:definition "Nivel de presión sonora mínimo"@es ;
+  skos:definition "Minimum sound pressure level"@en .
 
-edintnoiseratetype:LAeq a skos:Concept ;
-  skos:inScheme edintkos:NoiseRateType ;
-  skos:prefLabel "LAeq"@en ;
-  skos:prefLabel "LAeq"@es ;
-  skos:definition "Nivel continuo equivalente con ponderación frecuencial A, que es el nivel de ruido supuesto constante y continuo a lo largo de un periodo de tiempo, que se corresponde con la misma cantidad de energía que aquel nivel real variable medido en el mismo periodo"@es ;
-  skos:definition "A-weighted equivalent continuous sound level, which is the noise level assumed to be constant and continuous over a period of time, corresponding to the same amount of energy as the actual time-varying level measured during that same period"@en .
+#### Percentiles considerados: 01, 10, 50, 90, 99. Se pueden añadir los percentiles extra necesarios .
 
-edintnoiseratetype:LAS01 a skos:Concept ;
+edintnoiseratetype:01 a skos:Concept ;
   skos:inScheme edintkos:NoiseRateType ;
-  skos:prefLabel "LAS01"@en ;
-  skos:prefLabel "LAS01"@es ;
-  skos:definition "Nivel de presión sonora con ponderación frecuencial A y ponderación temporal Slow, que se sobrepasa durante el 1% del tiempo de observación"@es ;
-  skos:definition "A-weighted sound pressure level, with Slow time weighting, exceeded for 1% of the observation time"@en .
+  skos:notation: "01" ;
+  skos:prefLabel "Percentil 01"@es ;
+  skos:prefLabel "01st percentile "@en ;
+  skos:definition "Nivel de presión sonora que se sobrepasa durante el 1% del tiempo de observación"@es ;
+  skos:definition "Sound pressure level exceeded for 1% of the observation time"@en .
 
-edintnoiseratetype:LAS10 a skos:Concept ;
+edintnoiseratetype:10 a skos:Concept ;
   skos:inScheme edintkos:NoiseRateType ;
-  skos:prefLabel "LAS10"@en ;
-  skos:prefLabel "LAS10"@es ;
-  skos:definition "Nivel de presión sonora con ponderación frecuencial A y ponderación temporal Slow, que se sobrepasa durante el 10% del tiempo de observación"@es ;
-  skos:definition "A-weighted sound pressure level, with Slow time weighting, exceeded for 10% of the observation time"@en .
+  skos:notation: "10" ;
+  skos:prefLabel "Percentil 10"@es ;
+  skos:prefLabel "10th percentile"@en ;
+  skos:definition "Nivel de presión sonora que se sobrepasa durante el 10% del tiempo de observación"@es ;
+  skos:definition "Sound pressure level exceeded for 10% of the observation time"@en .
 
-edintnoiseratetype:LAS50 a skos:Concept ;
+edintnoiseratetype:50 a skos:Concept ;
   skos:inScheme edintkos:NoiseRateType ;
-  skos:prefLabel "LAS50"@en ;
-  skos:prefLabel "LAS50"@es ;
-  skos:definition "Nivel de presión sonora con ponderación frecuencial A y ponderación temporal Slow, que se sobrepasa durante el 50% del tiempo de observación"@es ;
-  skos:definition "A-weighted sound pressure level, with Slow time weighting, exceeded for 50% of the observation time"@en .
+  skos:notation: "50" ;
+  skos:prefLabel "Percentil 50"@es ;
+  skos:prefLabel "50th percentile"@en ;
+  skos:definition "Nivel de presión sonora que se sobrepasa durante el 50% del tiempo de observación"@es ;
+  skos:definition "Sound pressure level exceeded for 50% of the observation time"@en .
 
-edintnoiseratetype:LAS90 a skos:Concept ;
+edintnoiseratetype:90 a skos:Concept ;
   skos:inScheme edintkos:NoiseRateType ;
-  skos:prefLabel "LAS90"@en ;
-  skos:prefLabel "LAS90"@es ;
-  skos:definition "Nivel de presión sonora con ponderación frecuencial A y ponderación temporal Slow, que se sobrepasa durante el 90% del tiempo de observación"@es ;
-  skos:definition "A-weighted sound pressure level, with Slow time weighting, exceeded for 90% of the observation time"@en .
+  skos:notation: "90" ;
+  skos:prefLabel "Percentil 90"@es ;
+  skos:prefLabel "90th percentile"@en ;
+  skos:definition "Nivel de presión sonora que se sobrepasa durante el 90% del tiempo de observación"@es ;
+  skos:definition "Sound pressure level exceeded for 90% of the observation time"@en .
 
-edintnoiseratetype:LAS99 a skos:Concept ;
+edintnoiseratetype:99 a skos:Concept ;
   skos:inScheme edintkos:NoiseRateType ;
-  skos:prefLabel "LAS99"@en ;
-  skos:prefLabel "LAS99"@es ;
-  skos:definition "Nivel de presión sonora con ponderación frecuencial A y ponderación temporal Slow, que se sobrepasa durante el 99% del tiempo de observación"@es ;
-  skos:definition "A-weighted sound pressure level, with Slow time weighting, exceeded for 99% of the observation time"@en .
-
-edintnoiseratetype:LAw a skos:Concept ;
-  skos:inScheme edintkos:NoiseRateType ;
-  skos:prefLabel "LAw"@en ;
-  skos:prefLabel "LAw"@es ;
-  skos:definition "Índice de vibración que se utiliza para evaluar la molestia, los efectos nocivos y los niveles de vibración máximos, que se producen durante el periodo temporal de evaluación (diurno, nocturno), en el espacio interior de edificios"@es ;
-  skos:definition "Vibration rate used to assess discomfort, harmful effects, and maximum vibration levels, occurring during the assessment time period (daytime, night-time), within the indoor space of buildings"@en .
+  skos:notation: "99" ;
+  skos:prefLabel "Percentil 99"@es ;
+  skos:prefLabel "99th percentile"@en ;
+  skos:definition "Nivel de presión sonora que se sobrepasa durante el 99% del tiempo de observación"@es ;
+  skos:definition "Sound pressure level exceeded for 99% of the observation time"@en .

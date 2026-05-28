@@ -5,10 +5,10 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix edintmed: <http://vocab.linkeddata.es/datosabiertos/def/medioambiente#> .
+@prefix edintmed: <http://vocab.linkeddata.es/datosabiertos/def/medioambiente/> .
 @prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
 
-@prefix edintemittertype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/EmitterPredominantType/> .
+@prefix edintemittertype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseEmitterPredominantType/> .
 
 #################################################################
 #
@@ -16,7 +16,7 @@
 #
 #################################################################
 
-edintkos:EmitterPredominantType a skos:ConceptScheme ; 
+edintkos:NoiseEmitterPredominantType a skos:ConceptScheme ; 
     dct:issued "2026-03-27"^^xsd:date ;
     dct:modified "2026-03-27"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -36,84 +36,84 @@ edintkos:EmitterPredominantType a skos:ConceptScheme ;
 #################################################################
 
 edintemittertype:motorvehicle a skos:Concept ;
-  skos:inScheme edintkos:EmitterPredominantType ;
+  skos:inScheme edintkos:NoiseEmitterPredominantType ;
   skos:prefLabel "motor vehicle"@en ;
   skos:prefLabel "vehículos automóviles"@es ;
   skos:definition "Contaminación acústica provocada por un emisor de tipo vehículo automóvil"@es ;
   skos:definition "Noise pollution caused by a motor vehicle emitter"@en .
 
 edintemittertype:train a skos:Concept ;
-  skos:inScheme edintkos:EmitterPredominantType ;
+  skos:inScheme edintkos:NoiseEmitterPredominantType ;
   skos:prefLabel "train"@en ;
   skos:prefLabel "ferrocarriles"@es ;
   skos:definition "Contaminación acústica provocada por un emisor de tipo ferrocarril"@es ;
   skos:definition "Noise pollution caused by a train emitter"@en .
 
 edintemittertype:aircraft a skos:Concept ;
-  skos:inScheme edintkos:EmitterPredominantType ;
+  skos:inScheme edintkos:NoiseEmitterPredominantType ;
   skos:prefLabel "aircraft"@en ;
   skos:prefLabel "aeronave"@es ;
   skos:definition "Contaminación acústica provocada por un emisor de tipo aeronave"@es ;
   skos:definition "Noise pollution caused by an aircraft emitter"@en .
 
 edintemittertype:transportationindustry a skos:Concept ;
-  skos:inScheme edintkos:EmitterPredominantType ;
+  skos:inScheme edintkos:NoiseEmitterPredominantType ;
   skos:prefLabel "transportation industry"@en ;
   skos:prefLabel "industrias viarias"@es ;
   skos:definition "Contaminación acústica provocada por un emisor de tipo industria viaria"@es ;
   skos:definition "Noise pollution caused by a transportation industry emitter"@en .
 
 edintemittertype:railwayindustry a skos:Concept ;
-  skos:inScheme edintkos:EmitterPredominantType ;
+  skos:inScheme edintkos:NoiseEmitterPredominantType ;
   skos:prefLabel "railway industry"@en ;
   skos:prefLabel "industrias ferroviarias"@es ;
   skos:definition "Contaminación acústica provocada por un emisor de tipo industria ferroviaria"@es ;
   skos:definition "Noise pollution caused by a railway industry emitter"@en .
 
 edintemittertype:airportinfrastructure a skos:Concept ;
-  skos:inScheme edintkos:EmitterPredominantType ;
+  skos:inScheme edintkos:NoiseEmitterPredominantType ;
   skos:prefLabel "airport infrastructure"@en ;
   skos:prefLabel "infraestructuras aeroportuarias"@es ;
   skos:definition "Contaminación acústica provocada por un emisor de tipo infraestructura aeroportuaria"@es ;
   skos:definition "Noise pollution caused by an airport infrastructure emitter"@en .
 
 edintemittertype:machineryandequipment a skos:Concept ;
-  skos:inScheme edintkos:EmitterPredominantType ;
+  skos:inScheme edintkos:NoiseEmitterPredominantType ;
   skos:prefLabel "machinery and equipment"@en ;
   skos:prefLabel "maquinaria y equipos"@es ;
   skos:definition "Contaminación acústica provocada por un emisor de tipo maquinaria y equipo"@es ;
   skos:definition "Noise pollution caused by a machinery and equipment emitter"@en .
 
 edintemittertype:constructionsite a skos:Concept ;
-  skos:inScheme edintkos:EmitterPredominantType ;
+  skos:inScheme edintkos:NoiseEmitterPredominantType ;
   skos:prefLabel "construction site"@en ;
   skos:prefLabel "obras de construcción"@es ;
   skos:definition "Contaminación acústica provocada por un emisor de tipo construcción de edificios y de ingeniería civil"@es ;
   skos:definition "Noise pollution caused by a construction site emitter"@en .
 
 edintemittertype:industrialactivity a skos:Concept ;
-  skos:inScheme edintkos:EmitterPredominantType ;
+  skos:inScheme edintkos:NoiseEmitterPredominantType ;
   skos:prefLabel "industrual activity"@en ;
   skos:prefLabel "actividades industriales"@es ;
   skos:definition "Contaminación acústica provocada por un emisor de tipo actividad industrual"@es ;
   skos:definition "Noise pollution caused by an industrial activity emitter"@en .
 
 edintemittertype:commercialactivity a skos:Concept ;
-  skos:inScheme edintkos:EmitterPredominantType ;
+  skos:inScheme edintkos:NoiseEmitterPredominantType ;
   skos:prefLabel "commercial activity"@en ;
   skos:prefLabel "actividades comerciales"@es ;
   skos:definition "Contaminación acústica provocada por un emisor de tipo actividad comercial"@es ;
   skos:definition "Noise pollution caused by a commercial activity emitter"@en .
 
 edintemittertype:sportandleisureactivity a skos:Concept ;
-  skos:inScheme edintkos:EmitterPredominantType ;
+  skos:inScheme edintkos:NoiseEmitterPredominantType ;
   skos:prefLabel "sport and leisure activity"@en ;
   skos:prefLabel "actividades deportivas y de ocio"@es ;
   skos:definition "Contaminación acústica provocada por un emisor de tipo actividad deportiva y de ocio"@es ;
   skos:definition "Noise pollution caused by a sport and leisure activity emitter"@en .
 
 edintemittertype:portinfrastructure a skos:Concept ;
-  skos:inScheme edintkos:EmitterPredominantType ;
+  skos:inScheme edintkos:NoiseEmitterPredominantType ;
   skos:prefLabel "port infrastructure"@en ;
   skos:prefLabel "infraestructuras portuarias"@es ;
   skos:definition "Contaminación acústica provocada por un emisor de tipo infraestructura portuaria"@es ;
