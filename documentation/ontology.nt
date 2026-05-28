@@ -1,0 +1,257 @@
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://www.w3.org/2002/07/owl#imports> <http://vocab.linkeddata.es/datosabiertos/def/medioambiente/> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://purl.org/dc/terms/creator> "Daniel Doña"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://purl.org/dc/terms/creator> "Edna Ruckhaus" .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://purl.org/dc/terms/creator> "Lucía Sánchez" .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://purl.org/dc/terms/creator> "Maria del Socorro Bernardos" .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://purl.org/dc/terms/creator> "Oscar Corcho" .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://purl.org/dc/terms/description> "A lightweight ontology extending the medioambiente EDIT Ontology to represent noise pollution, restricting their observations to the EDINT SKOS controlled vocabulary."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://purl.org/dc/terms/description> "Una ontología ligera que extiende la ontología EDINT de medioambiente para representar contaminación acústica, restringiendo sus mediciones al vocabulario controlado SKOS de EDINT."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://purl.org/dc/terms/issued> "2026-03-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://purl.org/dc/terms/modified> "2026-03-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://purl.org/dc/terms/title> "EDINT Noise Pollution Ontology"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://purl.org/dc/terms/title> "Ontología EDINT de Contaminación Acústica"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://purl.org/vocab/vann/preferredNamespacePrefix> <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica#> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintacus" .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseEmitterPredominantType
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseEmitterPredominantType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseEmitterPredominantType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseEmitterPredominantType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseEmitterPredominantType> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseEmitterPredominantType> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that links a noise observation to its predominant type of emitter."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseEmitterPredominantType> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad que vincula una observación de ruido a su tipo predominante de emisor"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseEmitterPredominantType> <http://www.w3.org/2000/01/rdf-schema#label> "pedominant type of noise emitter"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseEmitterPredominantType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de emisor de ruido predominante"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noisePonderation
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noisePonderation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noisePonderation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noisePonderation> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noisePonderation> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that links a noise observation to its weighting."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noisePonderation> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad que vincula una observación de ruido  a su ponderación."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noisePonderation> <http://www.w3.org/2000/01/rdf-schema#label> "noise ponderation"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noisePonderation> <http://www.w3.org/2000/01/rdf-schema#label> "ponderación de ruido"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseRateType
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseRateType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseRateType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseRateType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseRateType> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that links a noise observation to its type of level for noise pressure level."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseRateType> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad que vincula una observación acústica con su tipo de índice para el nivel de presión sonora."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseRateType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de índice para ruido"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseRateType> <http://www.w3.org/2000/01/rdf-schema#label> "type of rate for noise pressure level"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseReferenceInterval
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseReferenceInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseReferenceInterval> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseReferenceInterval> <http://www.w3.org/2000/01/rdf-schema#range> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseReferenceInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that links a noise observation to its measurement period"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseReferenceInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad que  vincula una observación de ruido a su periodo de medición"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseReferenceInterval> <http://www.w3.org/2000/01/rdf-schema#label> "intervalo de referencia para ruido"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseReferenceInterval> <http://www.w3.org/2000/01/rdf-schema#label> "noise reference interval"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseTimeConstantType
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseTimeConstantType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseTimeConstantType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseTimeConstantType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid17 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseTimeConstantType> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that links a noise observation to its type of time constant."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseTimeConstantType> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad que vincula una observación de ruido a su tipo de constante de tiempo."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseTimeConstantType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de constante de tiempo para el ruido"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseTimeConstantType> <http://www.w3.org/2000/01/rdf-schema#label> "type of noise time constant"@en .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core#> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/medioambiente/EnvironmentalObservation> .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "An observation of a noise property made by a noise sensor"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Una observación de una propiedad acústica realizada por un sensor acústico"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Noise observation"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Observación acústica"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/medioambiente/EnvironmentalObservation
+<http://vocab.linkeddata.es/datosabiertos/def/medioambiente/EnvironmentalObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/medioambiente/EnvironmentalObservation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/medioambiente/> .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core#> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core#> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseEmitterPredominantType
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseEmitterPredominantType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseEmitterPredominantType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseEmitterPredominantType> <http://www.w3.org/2000/01/rdf-schema#label> "Noise emitter predominant type"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseEmitterPredominantType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de emisor de ruido prepoderante"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation> <http://www.w3.org/2000/01/rdf-schema#label> "Noise ponderation"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation> <http://www.w3.org/2000/01/rdf-schema#label> "Ponderación de ruido"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType> <http://www.w3.org/2000/01/rdf-schema#label> "Noise rate type"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de índice para ruido"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Intervalo de referencia para ruido"@es .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Noise reference interval"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType> <http://www.w3.org/2000/01/rdf-schema#label> "Noise time constant type"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de constante de tiempo para el ruido"@es .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

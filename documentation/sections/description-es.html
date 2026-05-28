@@ -1,0 +1,57 @@
+<h2 id="desc" class="list">Ontología EDINT de Contaminación Acústica: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+
+<span class="markdown">
+<p>Como se muestra en la Figura 1, esta ontología extiende la <a href="http://vocab.linkeddata.es/datosabiertos/def/medioambiente/">ontología de medioambiente</a> de EDINT añadiendo cinco propiedades para especificar las características concretas de una <a href="#NoiseObservation">observación de ruido</a>: <a href="#noiseEmitterPredominantType">tipo de emisor de ruido predominante</a>, <a href="#noiseReferenceInterval">intervalo de referencia para ruido</a>, <a href="#noiseRateType">tipo de índice para ruido</a>, <a href="#noisePonderation">ponderación de ruido</a>, y <a href="#noiseTimeConstantType">tipo de constante de tiempo para el ruido</a>, que están conectados a sus conceptos SKOS correspondientes: <a href="<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseEmitterPredominantType>">tipo de emisor de ruido predominante</a>, <a href="<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval>">intervalo de referencia para ruido</a>, <a href="<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType>">tipo de índice para ruido</a>, <a href="<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation>">ponderación de ruido</a> y <a href="<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType">tipo de constante de tiempo para el ruido</a>.
+</p>
+    
+<p><center><img src="images/diagram.png" style="width:100%;"/><figcaption>
+Figura 1. Modelo conceptual de la ontología</figcaption></center></p> 
+
+<p>A continuación mostramos un ejemplo en RDF, usando la notación RDF Turtle, que describe una observación del nivel de presión sonora equivalente con ponderación A (normalmente simplificado con LAeq)  y cuyo tipo de emisor predominante es un vehículo automóvil.</p>
+
+<pre><textarea style="resize:none" readonly id="code1" name="code" rows="50" cols="100">
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix schema: <http://schema.org/> .
+
+@prefix edintmed: <http://vocab.linkeddata.es/datosabiertos/def/medioambiente/> .
+@prefix edintnoiserefint: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval/> .
+@prefix edintnoisepon: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation/> .
+@prefix edintemittertype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/EmitterPredominantType/> .
+
+@prefix ex: <http://example.org/> .
+
+ex:Observation_LAeq_001 a edintacus:NoiseObservation ;
+    dct:identifier ex:Medicion_001	# Identificador compartido entre todos los valores calculados para una misma medición				
+	edintacus:noiseReferenceInterval edintnoiserefint:EquivalentLevel ;
+	edintacus:noisePonderation edintnoisepon:A ;
+	edintacus:noiseEmitterPredominantType edintemittertype:motorvehicle ;
+	rdfs:label "Nivel de presión sonora equivalente con ponderación A - 18/03/2026 08:00"@es ;
+    rdfs:label "A-weighting equivalent noise pressure level - 18/03/2026 08:00"@en ;
+    sosa:madeBySensor ex:Noise_Sensor_001 ;
+    sosa:hasFeatureOfInterest edintkosfoi:AcousticEnvironment ; 
+    sosa:resultTime "2026-03-18T08:00:00+01:00"^^xsd:dateTime ;
+    sosa:hasResult [
+        a qudt:QuantityValue ;
+        qudt:numericValue "57.4"^^xsd:decimal ;
+        qudt:unit unit:DeciB
+    ] .
+
+</textarea></pre>
+    <script>
+      var editor1 = CodeMirror.fromTextArea(document.getElementById("code1"), {
+        mode: "text/turtle",
+        matchBrackets: true
+      });
+ </script>
+ 
+</span>
