@@ -1,0 +1,13 @@
+Identifier,Responsible partner,"Version (optional)
+","Competency Question /
+ Natural language sentence (fact)",Answer (For Competency Questions),"Status (Proposed, Accepted, Rejected, Deprecated)",Comments (optional),Extracted from (provenance),"Priority 
+(High, Medium, Low) (optional)",Relation with other requirements (optional),Associated ontology elements,Relation to ontology elements in other domains
+CACU01,UPM,v0.1.0,¿Qué observaciones acústicas existen?,,Proposed,,,,,,
+CACU02,UPM,v0.1.0,¿Qué tipo de emisor predominante tiene cada observación?,,Proposed,,,,,,
+CACU03,UPM,v0.1.0,¿Qué ponderación se usa en cada observación acústica?,,Proposed,,,,,,
+CACU04,UPM,v0.1.0,¿Qué tipo de índice de nivel sonoro tiene cada observación?,,Proposed,,,,,,
+CACU05,UPM,v0.1.0,¿Qué intervalo de referencia se utiliza en cada observación?,,Proposed,,,,,,
+CACU06,UPM,v0.1.0,¿Qué tipo de constante de tiempo se utiliza en cada observación?,,Proposed,,,,,,
+CACU07,UPM,v0.1.0,¿Cuántas observaciones hay por tipo de emisor predominante?,,Proposed,,,,,,
+CACU08,UPM,v0.1.0,¿Qué observaciones cumplen una combinación específica de parámetros (para emisor predominante y ponderación)?,,Proposed,,,,,,
+CACU09,UPM,v0.1.0,¿Qué información completa tiene cada observación acústica?,,Proposed,,,,,,

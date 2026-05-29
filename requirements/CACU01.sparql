@@ -1,0 +1,9 @@
+
+# CACU01: ¿Qué observaciones acústicas existen?
+
+PREFIX edintacus: <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica#>
+
+SELECT ?obs
+WHERE {
+  ?obs a edintacus:NoiseObservation .
+}

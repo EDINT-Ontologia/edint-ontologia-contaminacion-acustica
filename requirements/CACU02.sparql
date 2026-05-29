@@ -1,0 +1,12 @@
+
+# CACU02: ¿Qué tipo de emisor predominante tiene cada observación?
+
+PREFIX edintacus: <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?obs ?emitter ?label
+WHERE {
+  ?obs a edintacus:NoiseObservation ;
+       edintacus:noiseEmitterPredominantType ?emitter .
+  OPTIONAL { ?emitter rdfs:label ?label }
+}

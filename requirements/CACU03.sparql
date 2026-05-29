@@ -1,0 +1,12 @@
+
+# CACU03: ¿Qué ponderación se usa en cada observación acústica?
+
+PREFIX edintacus: <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?obs ?ponderation ?label
+WHERE {
+  ?obs a edintacus:NoiseObservation ;
+       edintacus:noisePonderation ?ponderation .
+  OPTIONAL { ?ponderation rdfs:label ?label }
+}

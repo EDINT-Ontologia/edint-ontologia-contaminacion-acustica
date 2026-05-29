@@ -1,0 +1,12 @@
+
+# CACU04: ¿Qué tipo de índice de nivel sonoro tiene cada observación?
+
+PREFIX edintacus: <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?obs ?rateType ?label
+WHERE {
+  ?obs a edintacus:NoiseObservation ;
+       edintacus:noiseRateType ?rateType .
+  OPTIONAL { ?rateType rdfs:label ?label }
+}
