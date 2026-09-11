@@ -1,0 +1,228 @@
+prefixes:
+  schema: https://schema.org/
+  dct: http://purl.org/dc/terms/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sosa: http://www.w3.org/ns/sosa/
+  qudt: http://qudt.org/schema/qudt/
+  unit: http://qudt.org/vocab/unit/
+  edintmed: https://edint.es/def/medioambiente#
+  edintkossentype:  https://edint.es/kos/edint/sensortypes/
+  edintacus: https://edint.es/def/contaminacionacustica#
+  edintnoiserefint:  https://edint.es/kos/edint/NoiseReferenceInterval/
+  edintnoisepon:  https://edint.es/kos/edint/NoisePonderation/
+  edintkos-vars:  https://edint.es/kos/edint/EnvironmentalProperty/
+
+sources:
+  data-source: ['contaminacion_acustica_normalizado.csv~csv']
+
+mappings:
+  noise_station:
+    sources:
+      - data-source
+    s: https://example.org/recurso/estacionAcustica/$(entityid)
+    po:
+      - [a, edintmed:SensorPlatform]
+      - [dct:identifier, "$(entityid)"]
+      - [rdfs:label, "Estacion de monitorizacion acustica asociada a $(entityid)"]
+
+  noise_sensor:
+    sources:
+      - data-source
+    s: https://example.org/recurso/sensorAcustico/$(entityid)
+    po:
+      - [a, edintmed:EnvironmentalSensor]
+      - [dct:identifier, "$(entityid)"]
+      - [rdfs:label, "Sensor acustico asociado a $(entityid)"]
+      - [edintmed:hasSensorType, edintkossentype:NoiseSensor]
+      - [sosa:isHostedBy, "https://example.org/recurso/estacionAcustica/$(entityid)~iri"]
+
+  observation_laeq:
+    sources:
+      - data-source
+    s: https://example.org/recurso/observacionAcustica/$(entityid)/$(dateobserved)/laeq
+    po:
+      - [a, edintacus:NoiseObservation]
+#      - [dct:identifier, "$(entityid)-$(dateobserved)"]
+      - [dct:date, "$(dateobserved)", xsd:date]
+      - [edintacus:noisePonderation,edintnoisepon:A ] # SKOS
+      - p: sosa:observedProperty
+        o:
+          value: edintkos-vars:StatisticalNoiseLevels
+#          datatype: iri
+        condition:
+          function: equal
+          parameters:
+            - [grel:valueParameter, $(observedProperty)]
+            - [grel:valueParameter2, "NoiseLevelObservedAggregated"]
+      - [sosa:madeBySensor, "https://example.org/recurso/sensorAcustico/$(entityid)~iri"]
+      - [sosa:resultTime, "$(recvtime)",xsd:dateTime ]
+      - p: dct:identifier
+        o:
+          value: "$(entityid)-$(dateobserved)"
+          type: literal
+      - p: sosa:hasResult
+        o:
+          - mapping: result_laeq
+  result_laeq:
+    sources:
+      - data-source
+    s: https://example.org/recurso/observacionAcustica/$(entityid)/$(dateobserved)/result_laeq
+    po:
+      - [a, qudt:QuantityValue]
+      - [qudt:value, $(laeq)]
+
+
+  # LAeq_d - periodo diurno
+  observation_laeq_d:
+    sources:
+      - data-source
+    s: https://example.org/recurso/observacionAcustica/$(entityid)/$(dateobserved)/laeq_d
+    po:
+      - [a, edintacus:NoiseObservation]
+      - p: dct:identifier
+        o:
+          value: "$(entityid)-$(dateobserved)"
+          type: literal
+      - [dct:date, "$(dateobserved)", xsd:date]
+      - [rdfs:label, "Nivel de ruido diurno con ponderacion A - $(dateobserved)"]
+      - [edintacus:noiseReferenceInterval, edintnoiserefint:Day]
+      - [edintacus:noisePonderation, edintnoisepon:A]
+      - p: sosa:observedProperty
+      - p: sosa:observedProperty
+        o:
+          value: edintkos-vars:StatisticalNoiseLevels
+#          datatype: iri
+        condition:
+          function: equal
+          parameters:
+            - [grel:valueParameter, $(observedProperty)]
+            - [grel:valueParameter2, "NoiseLevelObservedAggregated"]
+      - [sosa:madeBySensor, "https://example.org/recurso/sensorAcustico/$(entityid)~iri"]
+      - [sosa:resultTime, "$(recvtime)"]
+      - p: sosa:hasResult
+        o:
+          - mapping: result_laeq_d
+
+  result_laeq_d:
+    sources:
+      - data-source
+    s: https://example.org/recurso/observacionAcustica/$(entityid)/$(dateobserved)/result_laeq_d
+    po:
+      - [a, qudt:QuantityValue]
+      - [qudt:value, $(laeq_d)]
+
+
+  # LAeq_den - dia/tarde/noche
+  observation_laeq_den:
+    sources:
+      - data-source
+    s: https://example.org/recurso/observacionAcustica/$(entityid)/$(dateobserved)/laeq_den
+    po:
+      - [a, edintacus:NoiseObservation]
+      - [dct:identifier,]
+      - p: dct:identifier
+        o:
+          value:  "$(entityid)-$(dateobserved)"
+          type: literal
+      - [dct:date, "$(dateobserved)", xsd:date]
+      - [rdfs:label, "Nivel de ruido dia-tarde-noche con ponderacion A - $(dateobserved)"]
+      - [edintacus:noisePonderation, edintnoisepon:A]
+      - p: sosa:observedProperty
+        o:
+          value: edintkos-vars:StatisticalNoiseLevels
+#          datatype: iri
+        condition:
+          function: equal
+          parameters:
+            - [grel:valueParameter, $(observedProperty)]
+            - [grel:valueParameter2, "NoiseLevelObservedAggregated"]
+      - [sosa:madeBySensor, "https://example.org/recurso/sensorAcustico/$(entityid)~iri"]
+      - [sosa:resultTime, "$(recvtime)"]
+      - p: sosa:hasResult
+        o:
+          - mapping: result_laeq_den
+
+  result_laeq_den:
+    sources:
+      - data-source
+    s: https://example.org/recurso/observacionAcustica/$(entityid)/$(dateobserved)/result_laeq_den
+    po:
+      - [a, qudt:QuantityValue]
+      - [qudt:value, $(laeq_den)]
+      - [qudt:unit, unit:DeciB]
+
+  # LAeq_e - periodo vespertino
+  observation_laeq_e:
+    sources:
+      - data-source
+    s: https://example.org/recurso/observacionAcustica/$(entityid)/$(dateobserved)/laeq_e
+    po:
+      - [a, edintacus:NoiseObservation]
+      - p: dct:identifier
+        o:
+          value:  "$(entityid)-$(dateobserved)"
+          type: literal
+      - [dct:date, "$(dateobserved)", xsd:date]
+      - [rdfs:label, "Nivel de ruido vespertino con ponderacion A - $(dateobserved)"]
+      - [edintacus:noisePonderation, edintnoisepon:A]
+      - p: sosa:observedProperty
+        o:
+          value: edintkos-vars:StatisticalNoiseLevels
+#          datatype: iri
+        condition:
+          function: equal
+          parameters:
+            - [grel:valueParameter, $(observedProperty)]
+            - [grel:valueParameter2, "NoiseLevelObservedAggregated"]
+      - [sosa:madeBySensor, "https://example.org/recurso/sensorAcustico/$(entityid)~iri"]
+      - [sosa:resultTime,"$(recvtime)"]
+      - p: sosa:hasResult
+        o:
+          - mapping: result_laeq_e
+
+  result_laeq_e:
+    sources:
+      - data-source
+    s: https://example.org/recurso/observacionAcustica/$(entityid)/$(dateobserved)/result_laeq_e
+    po:
+      - [a, qudt:QuantityValue]
+      - [qudt:value, $(laeq_e)]
+      - [qudt:unit, unit:DeciB]
+
+  # LAeq_n - periodo nocturno
+  observation_laeq_n:
+    sources:
+      - data-source
+    s: https://example.org/recurso/observacionAcustica/$(entityid)/$(dateobserved)/laeq_n
+    po:
+      - [a, edintacus:NoiseObservation]
+      - p: dct:identifier
+        o:
+          value:  "$(entityid)-$(dateobserved)"
+          type: literal
+      - [dct:date, "$(dateobserved)", xsd:date]
+      - [rdfs:label, "Nivel de ruido nocturno con ponderacion A - $(dateobserved)"]
+      - [edintacus:noisePonderation, edintnoisepon:A]
+      - p: sosa:observedProperty
+        o:
+          value: edintkos-vars:StatisticalNoiseLevels
+#          datatype: iri
+        condition:
+          function: equal
+          parameters:
+            - [grel:valueParameter, $(observedProperty)]
+            - [grel:valueParameter2, "NoiseLevelObservedAggregated"]
+      - [sosa:madeBySensor, "https://example.org/recurso/sensorAcustico/$(entityid)~iri"]
+      - [sosa:resultTime, "$(recvtime)"]
+      - predicates: sosa:hasResult
+        objects:
+          - mapping: result_laeq_n
+
+  result_laeq_n:
+    sources:
+      - data-source
+    s: https://example.org/recurso/observacionAcustica/$(entityid)/$(dateobserved)/result_laeq_n
+    po:
+      - [a, qudt:QuantityValue]
+      - [qudt:value, $(laeq_n)]
+      - [qudt:unit, unit:DeciB]
