@@ -1,7 +1,7 @@
 
 # CACU09: ¿Qué información completa tiene cada observación acústica?
 
-PREFIX edintacus: <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica#>
+PREFIX edintacus: <https://edint.es/def/contaminacion-acustica#>
 
 SELECT ?obs ?emitter ?ponderation ?rateType ?interval ?timeConstant
 WHERE {

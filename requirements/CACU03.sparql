@@ -1,7 +1,7 @@
 
 # CACU03: ¿Qué ponderación se usa en cada observación acústica?
 
-PREFIX edintacus: <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica#>
+PREFIX edintacus: <https://edint.es/def/contaminacion-acustica#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?obs ?ponderation ?label

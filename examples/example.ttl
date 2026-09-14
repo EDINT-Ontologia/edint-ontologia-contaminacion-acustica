@@ -1,4 +1,4 @@
-@prefix edintmed: <http://vocab.linkeddata.es/datosabiertos/def/medioambiente/> .
+@prefix edintmed: <https://edint.es/def/medio-ambiente#> .
 @prefix edintkosvars: <http://vocab.linkeddata.es/datosabiertos/kos/edint/EnvironmentalProperty/> .
 @prefix edintkosfoi: <http://vocab.linkeddata.es/datosabiertos/kos/edint/foi/> .
 @prefix edintkossentype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/sensortypes/> .
