@@ -12,22 +12,22 @@ Figura 1. Modelo conceptual de la ontología</figcaption></center></p>
 
 <pre><textarea style="resize:none" readonly id="code1" name="code" rows="50" cols="100">
 
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix qudt: <http://qudt.org/schema/qudt/> .
-@prefix unit: <http://qudt.org/vocab/unit/> .
-@prefix schema: <http://schema.org/> .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix dct: &lt;http://purl.org/dc/terms/&gt; .
+@prefix sosa: &lt;http://www.w3.org/ns/sosa/&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+@prefix gsp: &lt;http://www.opengis.net/ont/geosparql#&gt; .
+@prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt; .
+@prefix qudt: &lt;http://qudt.org/schema/qudt/&gt; .
+@prefix unit: &lt;http://qudt.org/vocab/unit/&gt; .
+@prefix schema: &lt;http://schema.org/&gt; .
 
-@prefix edintmed: <https://edint.es/def/medioambiente/> .
-@prefix edintnoiserefint: <https://edint.es/kos/NoiseReferenceInterval/> .
-@prefix edintnoisepon: <https://edint.es/kos/NoisePonderation/> .
-@prefix edintemittertype: <https://edint.es/kos/EmitterPredominantType/> .
+@prefix edintmed: &lt;https://edint.es/def/medioambiente/&gt; .
+@prefix edintnoiserefint: &lt;https://edint.es/kos/NoiseReferenceInterval/&gt; .
+@prefix edintnoisepon: &lt;https://edint.es/kos/NoisePonderation/&gt; .
+@prefix edintemittertype: &lt;https://edint.es/kos/EmitterPredominantType/&gt; .
 
 
 &lt;https://example.org/recurso/observacion/Observation_LAeq_001&gt;
@@ -43,7 +43,7 @@ Figura 1. Modelo conceptual de la ontología</figcaption></center></p>
     sosa:hasResult [
         a qudt:QuantityValue ;
         qudt:numericValue "57.4"^^xsd:decimal ;
-        qudt:unit unit:DeciB
+        qudt:hasUnit unit:DeciB
     ] .
 
 </textarea></pre>
