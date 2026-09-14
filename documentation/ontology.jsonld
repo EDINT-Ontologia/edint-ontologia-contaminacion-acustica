@@ -12,7 +12,7 @@
   "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType"
+    "@id" : "https://edint.es/kos/NoiseRateType"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -31,7 +31,7 @@
   "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval"
+    "@id" : "https://edint.es/kos/NoiseReferenceInterval"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -50,7 +50,7 @@
   "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType"
+    "@id" : "https://edint.es/kos/NoiseTimeConstantType"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -59,7 +59,7 @@
   "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseEmitterPredominantType"
+    "@id" : "https://edint.es/kos/NoiseEmitterPredominantType"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -78,7 +78,7 @@
   "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation"
+    "@id" : "https://edint.es/kos/NoisePonderation"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -124,7 +124,28 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/",
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/contaminacionacustica",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/creator" : [ {
     "@language" : "es",
@@ -164,18 +185,24 @@
     "@value" : "Ontología EDINT de Contaminación Acústica"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica#"
+    "@id" : "https://edint.es/def/contaminacionacustica#"
   }, {
     "@value" : "edintacus"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medioambiente/"
+    "@id" : "https://edint.es/def/medioambiente#"
+  } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@id" : "https://github.com/EDINT-Ontologia/edint-ontologia-contaminacion-acustica/releases/tag/v0.2.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://edint.es/def/contaminacionacustica"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.2.0"
+    "@value" : "0.2.1"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation",
+  "@id" : "https://edint.es/def/contaminacionacustica#NoiseObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -192,10 +219,10 @@
     "@value" : "Observación acústica"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medioambiente/EnvironmentalObservation"
+    "@id" : "https://edint.es/def/medioambiente#EnvironmentalObservation"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseEmitterPredominantType",
+  "@id" : "https://edint.es/def/contaminacionacustica#noiseEmitterPredominantType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -205,7 +232,7 @@
     "@value" : "Propiedad que vincula una observación de ruido a su tipo predominante de emisor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation"
+    "@id" : "https://edint.es/def/contaminacionacustica#NoiseObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -218,7 +245,7 @@
     "@id" : "_:genid1"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noisePonderation",
+  "@id" : "https://edint.es/def/contaminacionacustica#noisePonderation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -228,7 +255,7 @@
     "@value" : "Propiedad que vincula una observación de ruido  a su ponderación."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation"
+    "@id" : "https://edint.es/def/contaminacionacustica#NoiseObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -241,7 +268,7 @@
     "@id" : "_:genid5"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseRateType",
+  "@id" : "https://edint.es/def/contaminacionacustica#noiseRateType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -251,7 +278,7 @@
     "@value" : "Propiedad que vincula una observación acústica con su tipo de índice para el nivel de presión sonora."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation"
+    "@id" : "https://edint.es/def/contaminacionacustica#NoiseObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -264,7 +291,7 @@
     "@id" : "_:genid9"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseReferenceInterval",
+  "@id" : "https://edint.es/def/contaminacionacustica#noiseReferenceInterval",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -274,7 +301,7 @@
     "@value" : "Propiedad que  vincula una observación de ruido a su periodo de medición"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation"
+    "@id" : "https://edint.es/def/contaminacionacustica#NoiseObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -287,7 +314,7 @@
     "@id" : "_:genid13"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseTimeConstantType",
+  "@id" : "https://edint.es/def/contaminacionacustica#noiseTimeConstantType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -297,7 +324,7 @@
     "@value" : "Propiedad que vincula una observación de ruido a su tipo de constante de tiempo."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation"
+    "@id" : "https://edint.es/def/contaminacionacustica#NoiseObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -310,13 +337,13 @@
     "@id" : "_:genid17"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medioambiente/EnvironmentalObservation",
+  "@id" : "https://edint.es/def/medioambiente#EnvironmentalObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medioambiente/"
+    "@id" : "https://edint.es/def/medioambiente#"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseEmitterPredominantType",
+  "@id" : "https://edint.es/kos/NoiseEmitterPredominantType",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
@@ -329,7 +356,7 @@
     "@value" : "Tipo de emisor de ruido prepoderante"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation",
+  "@id" : "https://edint.es/kos/NoisePonderation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
@@ -342,7 +369,7 @@
     "@value" : "Ponderación de ruido"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType",
+  "@id" : "https://edint.es/kos/NoiseRateType",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
@@ -355,7 +382,7 @@
     "@value" : "Tipo de índice para ruido"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval",
+  "@id" : "https://edint.es/kos/NoiseReferenceInterval",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
@@ -368,7 +395,7 @@
     "@value" : "Noise reference interval"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType",
+  "@id" : "https://edint.es/kos/NoiseTimeConstantType",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
@@ -379,26 +406,5 @@
   }, {
     "@language" : "es",
     "@value" : "Tipo de constante de tiempo para el ruido"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/2001/XMLSchema#date",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#"
   } ]
 } ]

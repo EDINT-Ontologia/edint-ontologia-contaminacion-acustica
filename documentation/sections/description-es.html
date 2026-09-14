@@ -1,9 +1,9 @@
 <h2 id="desc" class="list">Ontología EDINT de Contaminación Acústica: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
 
 <span class="markdown">
-<p>Como se muestra en la Figura 1, esta ontología extiende la <a href="http://vocab.linkeddata.es/datosabiertos/def/medioambiente/">ontología de medioambiente</a> de EDINT añadiendo cinco propiedades para especificar las características concretas de una <a href="#NoiseObservation">observación de ruido</a>: <a href="#noiseEmitterPredominantType">tipo de emisor de ruido predominante</a>, <a href="#noiseReferenceInterval">intervalo de referencia para ruido</a>, <a href="#noiseRateType">tipo de índice para ruido</a>, <a href="#noisePonderation">ponderación de ruido</a>, y <a href="#noiseTimeConstantType">tipo de constante de tiempo para el ruido</a>, que están conectados a sus conceptos SKOS correspondientes: <a href="<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseEmitterPredominantType>">tipo de emisor de ruido predominante</a>, <a href="<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval>">intervalo de referencia para ruido</a>, <a href="<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType>">tipo de índice para ruido</a>, <a href="<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation>">ponderación de ruido</a> y <a href="<http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType">tipo de constante de tiempo para el ruido</a>.
+<p>Como se muestra en la Figura 1, esta ontología extiende la <a href="https://edint.es/def/medioambiente/">ontología de medioambiente</a> de EDINT añadiendo cinco propiedades para especificar las características concretas de una <a href="#NoiseObservation">observación de ruido</a>: <a href="#noiseEmitterPredominantType">tipo de emisor de ruido predominante</a>, <a href="#noiseReferenceInterval">intervalo de referencia para ruido</a>, <a href="#noiseRateType">tipo de índice para ruido</a>, <a href="#noisePonderation">ponderación de ruido</a>, y <a href="#noiseTimeConstantType">tipo de constante de tiempo para el ruido</a>, que están conectados a sus conceptos SKOS correspondientes: <a href="<https://edint.es/kos/NoiseEmitterPredominantType>">tipo de emisor de ruido predominante</a>, <a href="<https://edint.es/kos/NoiseReferenceInterval>">intervalo de referencia para ruido</a>, <a href="<https://edint.es/kos/NoiseRateType>">tipo de índice para ruido</a>, <a href="<https://edint.es/kos/NoisePonderation>">ponderación de ruido</a> y <a href="<https://edint.es/kos/NoiseTimeConstantType">tipo de constante de tiempo para el ruido</a>.
 </p>
-    
+
 <p><center><img src="images/diagram.png" style="width:100%;"/><figcaption>
 Figura 1. Modelo conceptual de la ontología</figcaption></center></p> 
 
@@ -23,14 +23,13 @@ Figura 1. Modelo conceptual de la ontología</figcaption></center></p>
 @prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix schema: <http://schema.org/> .
 
-@prefix edintmed: <http://vocab.linkeddata.es/datosabiertos/def/medioambiente/> .
-@prefix edintnoiserefint: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval/> .
-@prefix edintnoisepon: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation/> .
-@prefix edintemittertype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/EmitterPredominantType/> .
+@prefix edintmed: <https://edint.es/def/medioambiente/> .
+@prefix edintnoiserefint: <https://edint.es/kos/NoiseReferenceInterval/> .
+@prefix edintnoisepon: <https://edint.es/kos/NoisePonderation/> .
+@prefix edintemittertype: <https://edint.es/kos/EmitterPredominantType/> .
 
-@prefix ex: <http://example.org/> .
 
-ex:Observation_LAeq_001 a edintacus:NoiseObservation ;
+&lt;https://example.org/recurso/observacion/Observation_LAeq_001&gt;
     dct:identifier ex:Medicion_001	# Identificador compartido entre todos los valores calculados para una misma medición				
 	edintacus:noiseReferenceInterval edintnoiserefint:EquivalentLevel ;
 	edintacus:noisePonderation edintnoisepon:A ;

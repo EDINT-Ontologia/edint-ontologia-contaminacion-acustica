@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/"
-     xml:base="http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/"
+<rdf:RDF xmlns="https://edint.es/def/contaminacionacustica#"
+     xml:base="https://edint.es/def/contaminacionacustica"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -8,8 +8,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/">
-        <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/medioambiente/"/>
+    <owl:Ontology rdf:about="https://edint.es/def/contaminacionacustica">
+        <owl:versionIRI rdf:resource="https://edint.es/def/contaminacionacustica"/>
+        <owl:imports rdf:resource="https://edint.es/def/medioambiente#"/>
         <terms:creator xml:lang="es">Daniel Doña</terms:creator>
         <terms:creator>Edna Ruckhaus</terms:creator>
         <terms:creator>Lucía Sánchez</terms:creator>
@@ -22,9 +23,10 @@
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-27</terms:modified>
         <terms:title xml:lang="en">EDINT Noise Pollution Ontology</terms:title>
         <terms:title xml:lang="es">Ontología EDINT de Contaminación Acústica</terms:title>
-        <vann:preferredNamespacePrefix rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica#"/>
+        <vann:preferredNamespacePrefix rdf:resource="https://edint.es/def/contaminacionacustica#"/>
         <vann:preferredNamespacePrefix>edintacus</vann:preferredNamespacePrefix>
-        <owl:versionInfo>0.2.0</owl:versionInfo>
+        <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-contaminacion-acustica/releases/tag/v0.2.0"/>
+        <owl:versionInfo>0.2.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -128,18 +130,27 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseEmitterPredominantType -->
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseEmitterPredominantType">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation"/>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://edint.es/def/contaminacionacustica#noiseEmitterPredominantType -->
+
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacionacustica#noiseEmitterPredominantType">
+        <rdfs:domain rdf:resource="https://edint.es/def/contaminacionacustica#NoiseObservation"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseEmitterPredominantType"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/NoiseEmitterPredominantType"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -152,18 +163,18 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noisePonderation -->
+    <!-- https://edint.es/def/contaminacionacustica#noisePonderation -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noisePonderation">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacionacustica#noisePonderation">
+        <rdfs:domain rdf:resource="https://edint.es/def/contaminacionacustica#NoiseObservation"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/NoisePonderation"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -176,18 +187,18 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseRateType -->
+    <!-- https://edint.es/def/contaminacionacustica#noiseRateType -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseRateType">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacionacustica#noiseRateType">
+        <rdfs:domain rdf:resource="https://edint.es/def/contaminacionacustica#NoiseObservation"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/NoiseRateType"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -200,18 +211,18 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseReferenceInterval -->
+    <!-- https://edint.es/def/contaminacionacustica#noiseReferenceInterval -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseReferenceInterval">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacionacustica#noiseReferenceInterval">
+        <rdfs:domain rdf:resource="https://edint.es/def/contaminacionacustica#NoiseObservation"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/NoiseReferenceInterval"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -224,18 +235,18 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseTimeConstantType -->
+    <!-- https://edint.es/def/contaminacionacustica#noiseTimeConstantType -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/noiseTimeConstantType">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacionacustica#noiseTimeConstantType">
+        <rdfs:domain rdf:resource="https://edint.es/def/contaminacionacustica#NoiseObservation"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/NoiseTimeConstantType"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -244,15 +255,6 @@
         <rdfs:comment xml:lang="es">Propiedad que vincula una observación de ruido a su tipo de constante de tiempo.</rdfs:comment>
         <rdfs:label xml:lang="es">tipo de constante de tiempo para el ruido</rdfs:label>
         <rdfs:label xml:lang="en">type of noise time constant</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:ObjectProperty>
     
 
@@ -290,28 +292,6 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/NoiseObservation">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/medioambiente/EnvironmentalObservation"/>
-        <rdfs:comment xml:lang="en">An observation of a noise property made by a noise sensor</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una observación de una propiedad acústica realizada por un sensor acústico</rdfs:comment>
-        <rdfs:label xml:lang="en">Noise observation</rdfs:label>
-        <rdfs:label xml:lang="es">Observación acústica</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/medioambiente/EnvironmentalObservation -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/medioambiente/EnvironmentalObservation">
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/medioambiente/"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
 
@@ -330,6 +310,28 @@
     
 
 
+    <!-- https://edint.es/def/contaminacionacustica#NoiseObservation -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/contaminacionacustica#NoiseObservation">
+        <rdfs:subClassOf rdf:resource="https://edint.es/def/medioambiente#EnvironmentalObservation"/>
+        <rdfs:comment xml:lang="en">An observation of a noise property made by a noise sensor</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una observación de una propiedad acústica realizada por un sensor acústico</rdfs:comment>
+        <rdfs:label xml:lang="en">Noise observation</rdfs:label>
+        <rdfs:label xml:lang="es">Observación acústica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://edint.es/def/medioambiente#EnvironmentalObservation -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/medioambiente#EnvironmentalObservation">
+        <rdfs:isDefinedBy rdf:resource="https://edint.es/def/medioambiente#"/>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -342,10 +344,10 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseEmitterPredominantType -->
+    <!-- https://edint.es/kos/NoiseEmitterPredominantType -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseEmitterPredominantType">
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/NoiseEmitterPredominantType">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:label xml:lang="en">Noise emitter predominant type</rdfs:label>
         <rdfs:label xml:lang="es">Tipo de emisor de ruido prepoderante</rdfs:label>
@@ -353,10 +355,10 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation -->
+    <!-- https://edint.es/kos/NoisePonderation -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation">
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/NoisePonderation">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:label xml:lang="en">Noise ponderation</rdfs:label>
         <rdfs:label xml:lang="es">Ponderación de ruido</rdfs:label>
@@ -364,10 +366,10 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType -->
+    <!-- https://edint.es/kos/NoiseRateType -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType">
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/NoiseRateType">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:label xml:lang="en">Noise rate type</rdfs:label>
         <rdfs:label xml:lang="es">Tipo de índice para ruido</rdfs:label>
@@ -375,10 +377,10 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval -->
+    <!-- https://edint.es/kos/NoiseReferenceInterval -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval">
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/NoiseReferenceInterval">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:label xml:lang="es">Intervalo de referencia para ruido</rdfs:label>
         <rdfs:label xml:lang="en">Noise reference interval</rdfs:label>
@@ -386,10 +388,10 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType -->
+    <!-- https://edint.es/kos/NoiseTimeConstantType -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType">
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/NoiseTimeConstantType">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:label xml:lang="en">Noise time constant type</rdfs:label>
         <rdfs:label xml:lang="es">Tipo de constante de tiempo para el ruido</rdfs:label>

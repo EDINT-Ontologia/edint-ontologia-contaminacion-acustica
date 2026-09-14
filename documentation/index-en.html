@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/","name":"EDINT Noise Pollution Ontology", "headline":"Document describing the ontology http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/", "dateReleased":"Thu May 28 09:25:16 CEST 2026", "dateModified":"2026-03-27", "version":"0.2.0", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Daniel Doña"},{"@type":"Person","name":"Edna Ruckhaus"},{"@type":"Person","name":"Lucía Sánchez"},{"@type":"Person","name":"Maria del Socorro Bernardos"},{"@type":"Person","name":"Oscar Corcho"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://edint.es/def/contaminacionacustica","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://edint.es/def/contaminacionacustica","name":"EDINT Noise Pollution Ontology", "headline":"Document describing the ontology https://edint.es/def/contaminacionacustica", "dateReleased":"Thu May 28 09:25:16 CEST 2026", "dateModified":"2026-03-27", "version":"0.2.1", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Daniel Doña"},{"@type":"Person","name":"Edna Ruckhaus"},{"@type":"Person","name":"Lucía Sánchez"},{"@type":"Person","name":"Maria del Socorro Bernardos"},{"@type":"Person","name":"Oscar Corcho"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -64,6 +64,10 @@ function loadTOC(){
       $("#crossref").load("sections/crossref-en.html", null, loadHash); 
     });
     </script> 
+  <link rel="stylesheet" href="resources/codemirror.css" media="screen">
+<script src="resources/codemirror.js"></script>
+<script src="resources/matchbrackets.js"></script>
+<script src="resources/turtle.js"></script>
   </head> 
 
 <body>
@@ -74,11 +78,13 @@ function loadTOC(){
 
 
 <dl>
-<dt>Modified on: 2026-03-27</dt>
+<dt>Release date: 2026-03-27</dt>
 <dt>Latest version:</dt>
-<dd><a href="http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/">http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/</a></dd>
+<dd><a href="https://edint.es/def/contaminacionacustica">https://edint.es/def/contaminacionacustica</a></dd>
+<dt>Previous version:</dt>
+<dd><a href="https://github.com/EDINT-Ontologia/edint-ontologia-contaminacion-acustica/releases/tag/v0.2.0">https://github.com/EDINT-Ontologia/edint-ontologia-contaminacion-acustica/releases/tag/v0.2.0</a></dd>
 <dt>Revision:</dt>
-<dd>0.2.0</dd>
+<dd>0.2.1</dd>
 <dt>Issued on:</dt>
 <dd>2026-03-27</dd>
 <dt>Authors:</dt>
@@ -86,7 +92,7 @@ function loadTOC(){
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
 </dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Daniel Doña, Edna Ruckhaus, Lucía Sánchez, Maria del Socorro Bernardos, Oscar Corcho. EDINT Noise Pollution Ontology. Revision: 0.2.0.</dd>
+<dd>Daniel Doña, Edna Ruckhaus, Lucía Sánchez, Maria del Socorro Bernardos, Oscar Corcho. EDINT Noise Pollution Ontology. Revision: 0.2.1.</dd>
 </dl>
 
 <hr/>
