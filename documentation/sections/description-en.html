@@ -1,6 +1,6 @@
 <h2 id="desc" class="list">EDINT Noise Pollution Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
-<span class="markdown">
+<div>
 <p>As shown in Figure 1, this ontology extends the <a href="http://vocab.linkeddata.es/datosabiertos/def/medioambiente/">environment ontology</a> of EDINT by adding five properties to specify the specific characteristics of a <a href="#NoiseObservation">noise observation</a>: <a href="#noiseEmitterPredominantType">predominant noise emitter type</a>, <a href="#noiseReferenceInterval">noise reference interval</a>, <a href="#noiseRateType">noise rate type</a>, <a href="#noisePonderation">noise weighting</a>, and <a href="#noiseTimeConstantType">noise time constant type</a>, which are linked to their corresponding SKOS concepts: <a href="&lt;http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseEmitterPredominantType&gt;">predominant noise emitter type</a>, <a href="&lt;http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval&gt;">noise reference interval</a>, <a href="&lt;http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType&gt;">noise rate type</a>, <a href="&lt;http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation&gt;">noise weighting</a> and <a href="&lt;http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType&gt;">noise time constant type</a>.
 </p>
     
@@ -11,26 +11,20 @@ Figure 1. Conceptual model of the ontology</figcaption></center></p>
 
 <pre><textarea style="resize:none" readonly id="code1" name="code" rows="50" cols="100">
 
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix qudt: <http://qudt.org/schema/qudt/> .
-@prefix unit: <http://qudt.org/vocab/unit/> .
-@prefix schema: <http://schema.org/> .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix dct: &lt;http://purl.org/dc/terms/&gt; .
+@prefix sosa: &lt;http://www.w3.org/ns/sosa/&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+@prefix gsp: &lt;http://www.opengis.net/ont/geosparql#&gt; .
+@prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt; .
+@prefix qudt: &lt;http://qudt.org/schema/qudt/&gt; .
+@prefix unit: &lt;http://qudt.org/vocab/unit/&gt; .
+@prefix schema: &lt;http://schema.org/&gt; .
 
-@prefix edintmed: <http://vocab.linkeddata.es/datosabiertos/def/medioambiente/> .
-@prefix edintnoiserefint: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval/> .
-@prefix edintnoisepon: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation/> .
-@prefix edintemittertype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/EmitterPredominantType/> .
 
-@prefix ex: <http://example.org/> .
-
-ex:Observation_LAeq_001 a edintacus:NoiseObservation ;
+&lt;https://example.org/recurso/observacion/Observation_LAeq_001&gt; a edintacus:NoiseObservation ;
     dct:identifier ex:Medicion_001	# Identificador compartido entre todos los valores calculados para una misma medición				
 	edintacus:noiseReferenceInterval edintnoiserefint:EquivalentLevel ;
 	edintacus:noisePonderation edintnoisepon:A ;
@@ -43,7 +37,7 @@ ex:Observation_LAeq_001 a edintacus:NoiseObservation ;
     sosa:hasResult [
         a qudt:QuantityValue ;
         qudt:numericValue "57.4"^^xsd:decimal ;
-        qudt:unit unit:DeciB
+        qudt:hasUnit unit:DeciB
     ] .
 	
 </textarea></pre>
@@ -54,4 +48,4 @@ ex:Observation_LAeq_001 a edintacus:NoiseObservation ;
       });
  </script>
  
-</span>
+</div>
