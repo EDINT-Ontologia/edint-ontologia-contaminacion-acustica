@@ -1,7 +1,7 @@
 
 # CACU07: ¿Cuántas observaciones hay por tipo de emisor predominante?
 
-PREFIX edintacus: <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica#>
+PREFIX edintacus: <https://edint.es/def/contaminacion-acustica#>
 
 SELECT ?emitter (COUNT(?obs) AS ?count)
 WHERE {

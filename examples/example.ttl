@@ -1,9 +1,9 @@
-@prefix edintmed: <http://vocab.linkeddata.es/datosabiertos/def/medioambiente/> .
+@prefix edintmed: <https://edint.es/def/medio-ambiente#> .
 @prefix edintkosvars: <http://vocab.linkeddata.es/datosabiertos/kos/edint/EnvironmentalProperty/> .
 @prefix edintkosfoi: <http://vocab.linkeddata.es/datosabiertos/kos/edint/foi/> .
 @prefix edintkossentype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/sensortypes/> .
 
-@prefix edintacus <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/> .
+@prefix edintacus <https://edint.es/def/contaminacion-acustica#> .
 @prefix edintemittertype <http://vocab.linkeddata.es/datosabiertos/kos/edint/EmitterPredominantType/> .
 @prefix edintnoiseratetype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType/> .
 @prefix edintnoiserefint: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval/> .

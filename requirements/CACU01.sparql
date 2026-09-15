@@ -1,7 +1,7 @@
 
 # CACU01: ¿Qué observaciones acústicas existen?
 
-PREFIX edintacus: <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica#>
+PREFIX edintacus: <https://edint.es/def/contaminacion-acustica#>
 
 SELECT ?obs
 WHERE {

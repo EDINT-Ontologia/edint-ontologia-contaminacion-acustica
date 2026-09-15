@@ -6,7 +6,7 @@
 @prefix unit: <http://qudt.org/vocab/unit/>.
 @prefix edintmed: <https://edint.es/def/medioambiente#>.
 @prefix edintkossentype: <https://edint.es/kos/edint/sensortypes/>.
-@prefix edintacus: <https://edint.es/def/contaminacionacustica#>.
+@prefix edintacus: <https://edint.es/def/contaminacion-acustica#>.
 @prefix edintnoiserefint: <https://edint.es/kos/edint/NoiseReferenceInterval/>.
 @prefix edintnoisepon: <https://edint.es/kos/edint/NoisePonderation/>.
 @prefix edintkos-vars: <https://edint.es/kos/edint/EnvironmentalProperty/>.

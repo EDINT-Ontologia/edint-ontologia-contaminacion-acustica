@@ -11,7 +11,7 @@ Ver también: [Ontología EDINT de Sensores Medioambientales](https://github.com
 
 # Prefijo y espacio de nombres (Prefix and namespace)
 
-El prefijo de la ontología de *Contaminación Acústica* es: `edintacus` publicado bajo el espacio de nombres: [http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/](http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica/)
+El prefijo de la ontología de *Contaminación Acústica* es: `edintacus` publicado bajo el espacio de nombres: [https://edint.es/def/contaminacion-acustica#](https://edint.es/def/contaminacion-acustica#)
 
 # Modelo conceptual (Ontology conceptualization)
 

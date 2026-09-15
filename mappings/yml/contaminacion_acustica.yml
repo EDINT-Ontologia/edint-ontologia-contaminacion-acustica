@@ -7,7 +7,7 @@ prefixes:
   unit: http://qudt.org/vocab/unit/
   edintmed: https://edint.es/def/medioambiente#
   edintkossentype:  https://edint.es/kos/edint/sensortypes/
-  edintacus: https://edint.es/def/contaminacionacustica#
+  edintacus: https://edint.es/def/contaminacion-acustica#
   edintnoiserefint:  https://edint.es/kos/edint/NoiseReferenceInterval/
   edintnoisepon:  https://edint.es/kos/edint/NoisePonderation/
   edintkos-vars:  https://edint.es/kos/edint/EnvironmentalProperty/

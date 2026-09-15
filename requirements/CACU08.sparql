@@ -1,7 +1,7 @@
 
 # CACU08: ¿Qué observaciones cumplen una combinación específica de parámetros (para emisor predominante y ponderación)?
 
-PREFIX edintacus: <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica#>
+PREFIX edintacus: <https://edint.es/def/contaminacion-acustica#>
 
 SELECT ?obs
 WHERE {

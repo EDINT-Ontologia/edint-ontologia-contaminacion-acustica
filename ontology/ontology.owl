@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://edint.es/def/contaminacionacustica#"
-     xml:base="https://edint.es/def/contaminacionacustica"
+<rdf:RDF xmlns="https://edint.es/def/contaminacion-acustica#"
+     xml:base="https://edint.es/def/contaminacion-acustica"
      xmlns:dct="http://purl.org/dc/terms/"
      xmlns:geo="http://www.opengis.net/ont/geosparql#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -13,14 +13,14 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:edintkos="https://edint.es/kos/"
      xmlns:edintmed="https://edint.es/def/medioambiente#"
-     xmlns:edintacus="https://edint.es/def/contaminacionacustica#"
+     xmlns:edintacus="https://edint.es/def/contaminacion-acustica#"
      xmlns:edintnoisepon="https://edint.es/kos/NoisePonderation/"
      xmlns:edintemittertype="https://edint.es/kos/EmitterPredominantType/"
      xmlns:edintnoiserefint="https://edint.es/kos/NoiseReferenceInterval/"
      xmlns:edintnoisetimecon="https://edint.es/kos/NoiseTimeConstant/"
      xmlns:edintnoiseratetype="https://edint.es/kos/NoiseRateType/">
-    <owl:Ontology rdf:about="https://edint.es/def/contaminacionacustica">
-        <owl:versionIRI rdf:resource="https://edint.es/def/contaminacionacustica"/>
+    <owl:Ontology rdf:about="https://edint.es/def/contaminacion-acustica">
+        <owl:versionIRI rdf:resource="https://edint.es/def/contaminacion-acustica"/>
         <owl:imports rdf:resource="https://edint.es/def/medioambiente#"/>
         <dct:creator xml:lang="es">Daniel Doña</dct:creator>
         <dct:creator>Edna Ruckhaus</dct:creator>
@@ -34,7 +34,7 @@
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-27</dct:modified>
         <dct:title xml:lang="en">EDINT Noise Pollution Ontology</dct:title>
         <dct:title xml:lang="es">Ontología EDINT de Contaminación Acústica</dct:title>
-        <vann:preferredNamespacePrefix rdf:resource="https://edint.es/def/contaminacionacustica#"/>
+        <vann:preferredNamespacePrefix rdf:resource="https://edint.es/def/contaminacion-acustica#"/>
         <vann:preferredNamespacePrefix>edintacus</vann:preferredNamespacePrefix>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-contaminacion-acustica/releases/tag/v0.2.0"/>
         <owl:versionInfo>0.2.1</owl:versionInfo>
@@ -137,10 +137,10 @@
     
 
 
-    <!-- https://edint.es/def/contaminacionacustica#noiseEmitterPredominantType -->
+    <!-- https://edint.es/def/contaminacion-acustica#noiseEmitterPredominantType -->
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacionacustica#noiseEmitterPredominantType">
-        <rdfs:domain rdf:resource="https://edint.es/def/contaminacionacustica#NoiseObservation"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacion-acustica#noiseEmitterPredominantType">
+        <rdfs:domain rdf:resource="https://edint.es/def/contaminacion-acustica#NoiseObservation"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -160,10 +160,10 @@
     
 
 
-    <!-- https://edint.es/def/contaminacionacustica#noisePonderation -->
+    <!-- https://edint.es/def/contaminacion-acustica#noisePonderation -->
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacionacustica#noisePonderation">
-        <rdfs:domain rdf:resource="https://edint.es/def/contaminacionacustica#NoiseObservation"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacion-acustica#noisePonderation">
+        <rdfs:domain rdf:resource="https://edint.es/def/contaminacion-acustica#NoiseObservation"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -183,10 +183,10 @@
     
 
 
-    <!-- https://edint.es/def/contaminacionacustica#noiseRateType -->
+    <!-- https://edint.es/def/contaminacion-acustica#noiseRateType -->
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacionacustica#noiseRateType">
-        <rdfs:domain rdf:resource="https://edint.es/def/contaminacionacustica#NoiseObservation"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacion-acustica#noiseRateType">
+        <rdfs:domain rdf:resource="https://edint.es/def/contaminacion-acustica#NoiseObservation"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -206,10 +206,10 @@
     
 
 
-    <!-- https://edint.es/def/contaminacionacustica#noiseReferenceInterval -->
+    <!-- https://edint.es/def/contaminacion-acustica#noiseReferenceInterval -->
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacionacustica#noiseReferenceInterval">
-        <rdfs:domain rdf:resource="https://edint.es/def/contaminacionacustica#NoiseObservation"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacion-acustica#noiseReferenceInterval">
+        <rdfs:domain rdf:resource="https://edint.es/def/contaminacion-acustica#NoiseObservation"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -229,10 +229,10 @@
     
 
 
-    <!-- https://edint.es/def/contaminacionacustica#noiseTimeConstantType -->
+    <!-- https://edint.es/def/contaminacion-acustica#noiseTimeConstantType -->
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacionacustica#noiseTimeConstantType">
-        <rdfs:domain rdf:resource="https://edint.es/def/contaminacionacustica#NoiseObservation"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacion-acustica#noiseTimeConstantType">
+        <rdfs:domain rdf:resource="https://edint.es/def/contaminacion-acustica#NoiseObservation"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -298,9 +298,9 @@
     
 
 
-    <!-- https://edint.es/def/contaminacionacustica#NoiseObservation -->
+    <!-- https://edint.es/def/contaminacion-acustica#NoiseObservation -->
 
-    <owl:Class rdf:about="https://edint.es/def/contaminacionacustica#NoiseObservation">
+    <owl:Class rdf:about="https://edint.es/def/contaminacion-acustica#NoiseObservation">
         <rdfs:subClassOf rdf:resource="https://edint.es/def/medioambiente#EnvironmentalObservation"/>
         <rdfs:comment xml:lang="en">An observation of a noise property made by a noise sensor</rdfs:comment>
         <rdfs:comment xml:lang="es">Una observación de una propiedad acústica realizada por un sensor acústico</rdfs:comment>

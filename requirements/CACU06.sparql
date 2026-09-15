@@ -1,7 +1,7 @@
 
 # CACU06: ¿Qué tipo de constante de tiempo se utiliza en cada observación?
 
-PREFIX edintacus: <http://vocab.linkeddata.es/datosabiertos/def/contaminacionacustica#>
+PREFIX edintacus: <https://edint.es/def/contaminacion-acustica#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?obs ?timeConstant ?label
