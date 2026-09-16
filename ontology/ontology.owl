@@ -22,7 +22,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/"
      xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/">    <owl:Ontology rdf:about="https://edint.es/def/contaminacion-acustica">
-        <owl:versionIRI rdf:resource="https://edint.es/def/contaminacion-acustica"/>
+        <owl:versionIRI rdf:resource="https://edint.es/def/contaminacion-acustica/0.2.1"/>
         <owl:imports rdf:resource="https://edint.es/def/medioambiente#"/>
         <dct:creator rdf:parseType="Resource">
             <foaf:name>Daniel Doña</foaf:name>
