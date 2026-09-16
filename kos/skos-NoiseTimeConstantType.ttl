@@ -38,15 +38,15 @@ edintkos:NoiseTimeConstantType a skos:ConceptScheme ;
 
 edintnoisetimecon:Slow a skos:Concept ;
   skos:inScheme edintkos:NoiseTimeConstantType ;
-  skos:notation: "S" ;
+  skos:notation "S" ;
   skos:prefLabel "Lenta"@es ;
   skos:prefLabel "Slow"@en ;
   skos:definition "Constante de tiempo lenta (≈ 1 segundo). Reduce la influencia de variaciones rápidas"@es ;
-  skos:definition "Slow time constant (≈ 1 second). It reduces the influence of rapid variations." @en .
+  skos:definition "Slow time constant (≈ 1 second). It reduces the influence of rapid variations."@en .
   
 edintnoisetimecon:Fast a skos:Concept ;
   skos:inScheme edintkos:NoiseTimeConstantType ;
-  skos:notation: "F" ;
+  skos:notation "F" ;
   skos:prefLabel "Rápida"@es ;
   skos:prefLabel "Fast"@en ;
   skos:definition "Constante de tiempo rápida (≈ 125 ms). Detecta cambios rápidos del sonido"@es ;
@@ -54,7 +54,7 @@ edintnoisetimecon:Fast a skos:Concept ;
 
 edintnoisetimecon:Impulse a skos:Concept ;
   skos:inScheme edintkos:NoiseTimeConstantType ;
-  skos:notation: "I" ;
+  skos:notation "I" ;
   skos:prefLabel "Impulso"@es ;
   skos:prefLabel "Impulse"@en ;
   skos:definition "Constante de tiempo de impulso. Diseñada para ruidos de impulso (golpes, explosiones)"@es ;

@@ -1,10 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix edintmed: <https://edint.es/def/medio-ambiente#> .
 @prefix edintkosvars: <http://vocab.linkeddata.es/datosabiertos/kos/edint/EnvironmentalProperty/> .
 @prefix edintkosfoi: <http://vocab.linkeddata.es/datosabiertos/kos/edint/foi/> .
 @prefix edintkossentype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/sensortypes/> .
 
-@prefix edintacus <https://edint.es/def/contaminacion-acustica#> .
-@prefix edintemittertype <http://vocab.linkeddata.es/datosabiertos/kos/edint/EmitterPredominantType/> .
+@prefix edintacus: <https://edint.es/def/contaminacion-acustica#> .
+@prefix edintemittertype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/EmitterPredominantType/> .
 @prefix edintnoiseratetype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType/> .
 @prefix edintnoiserefint: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval/> .
 @prefix edintnoisetimecon: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType/> .
@@ -30,7 +40,7 @@ ex:Noise_Station_001 a edintmed:SensorPlatform ;
     rdfs:comment "Fixed urban station for environmental noise level monitoring"@en ;
     gsp:hasGeometry [
         a gsp:Geometry ;
-        gsp:asWKT "POINT(-3.7074 40.4153)"^^xsd:string .
+        gsp:asWKT "POINT(-3.7074 40.4153)"^^xsd:string
     ].
 
 # ---------------------------------------------------------------------------
@@ -62,7 +72,7 @@ ex:Noise_Sensor_002 a edintmed:EnvironmentalSensor ;
 # Medición del nivel de presión sonora equivalente con ponderación A y vehiculo automóvil como emisor preponderante
 
 ex:Observation_LAeq_001 a edintacus:NoiseObservation ;
-    dct:identifier ex:Medicion_001	# Identificador compartido entre todos los valores calculados para una misma medición				
+    dct:identifier ex:Medicion_001 ;	# Identificador compartido entre todos los valores calculados para una misma medición				
 	edintacus:noiseReferenceInterval edintnoiserefint:EquivalentLevel ;
 	edintacus:noisePonderation edintnoisepon:A ;
 	edintacus:noiseEmitterPredominantType edintemittertype:motorvehicle ;
@@ -80,11 +90,11 @@ ex:Observation_LAeq_001 a edintacus:NoiseObservation ;
 # Medición del nivel de presión sonora con ponderación A, constante lenta y percentil 10 para periodos diurnos
  
 ex:Observation_LAS10_001 a edintacus:NoiseObservation ;
-    dct:identifier ex:Medicion_001	# Identificador compartido entre todos los valores calculados para una misma medición				
+    dct:identifier ex:Medicion_001 ;	# Identificador compartido entre todos los valores calculados para una misma medición				
 	edintacus:noiseReferenceInterval edintnoiserefint:Day ;
 	edintacus:noisePonderation edintnoisepon:A ;
-	edintnoisetimecon:Slow ;
-	edintnoiseratetype:10 ;
+	edintacus:noiseTimeConstantType edintnoisetimecon:Slow ;
+	edintacus:noiseRateType edintnoiseratetype:10 ;
 	edintacus:noiseEmitterPredominantType edintemittertype:motorvehicle ;
 	rdfs:label "Nivel de presión sonora que delimita el percentil 10 con ponderación A y constante de tiempo lenta- 18/03/2026 08:00"@es ;
     rdfs:label "A-weighting and slow-time-constant 10th percentile noise pressure level - 18/03/2026 08:00"@en ;
@@ -105,7 +115,7 @@ ex:Observation_LAS10_001 a edintacus:NoiseObservation ;
 # Medición del nivel de presión sonora equivalente con ponderación A y vehiculo automóvil como emisor preponderante
 
 ex:Observation_LAeq_001 a edintacus:NoiseObservation ;
-    dct:identifier ex:Medicion_001	# Identificador compartido entre todos los valores calculados para una misma medición				
+    dct:identifier ex:Medicion_001 ;	# Identificador compartido entre todos los valores calculados para una misma medición				
 	edintacus:noiseReferenceInterval edintnoiserefint:EquivalentLevel ;
 	edintacus:noisePonderation edintnoisepon:A ;
 	edintacus:noiseEmitterPredominantType edintemittertype:motorvehicle ;
@@ -123,11 +133,11 @@ ex:Observation_LAeq_001 a edintacus:NoiseObservation ;
 # Medición del nivel de presión sonora con ponderación A, constante lenta y percentil 10 para periodos diurnos
  
 ex:Observation_LAS10_001 a edintacus:NoiseObservation ;
-    dct:identifier ex:Medicion_001	# Identificador compartido entre todos los valores calculados para una misma medición				
+    dct:identifier ex:Medicion_001 ;	# Identificador compartido entre todos los valores calculados para una misma medición				
 	edintacus:noiseReferenceInterval edintnoiserefint:Day ;
 	edintacus:noisePonderation edintnoisepon:A ;
-	edintnoisetimecon:Slow ;
-	edintnoiseratetype:10 ;
+	edintacus:noiseTimeConstantType edintnoisetimecon:Slow ;
+	edintacus:noiseRateType edintnoiseratetype:10 ;
 	edintacus:noiseEmitterPredominantType edintemittertype:motorvehicle ;
 	rdfs:label "Nivel de presión sonora que delimita el percentil 10 con ponderación A y constante de tiempo lenta- 19/03/2026 08:00"@es ;
     rdfs:label "A-weighting and slow-time-constant 10th percentile noise pressure level - 19/03/2026 08:00"@en ;

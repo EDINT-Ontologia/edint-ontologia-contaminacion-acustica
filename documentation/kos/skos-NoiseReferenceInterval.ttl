@@ -36,16 +36,16 @@ edintkos:NoiseReferenceInterval a skos:ConceptScheme ;
 
 edintnoiserefint:EquivalentLevel a skos:Concept ;
   skos:inScheme edintkos:NoiseReferenceInterval ;
-  skos:notation: "eq" ;
+  skos:notation "eq" ;
   skos:prefLabel "Equivalent level"@en ;
   skos:prefLabel "Nivel equivalente"@es ;
   skos:definition "Nivel continuo constante de presión sonora a lo largo de un periodo de tiempo, que se corresponde con la misma cantidad de energía acústica total que el ruido real variable medido en ese periodo"@es ;
-  skos:definition "The noise level assumed to be constant and continuous over a period of time, corresponding to the same amount of energy as the actual time-varying level measured during that same period" @en ;.
+  skos:definition "The noise level assumed to be constant and continuous over a period of time, corresponding to the same amount of energy as the actual time-varying level measured during that same period"@en .
   
 
 edintnoiserefint:Day_evening_night a skos:Concept ;
   skos:inScheme edintkos:NoiseReferenceInterval ;
-  skos:notation: "den" ;
+  skos:notation "den" ;
   skos:prefLabel "Day-evening-night level"@en ;
   skos:prefLabel "Nivel de dia-tarde-noche"@es ;
   skos:definition "Nivel equivalente durante el día completo (día, tarde y noche), teniendo en cuenta toda la variación del sonido a lo largo de un periodo que incluye uno o varios días."@es ;
@@ -53,7 +53,7 @@ edintnoiserefint:Day_evening_night a skos:Concept ;
 
 edintnoiserefint:Day a skos:Concept ;
   skos:inScheme edintkos:NoiseReferenceInterval ;
-  skos:notation: "d" ;
+  skos:notation "d" ;
   skos:prefLabel "Day level"@en ;
   skos:prefLabel "Nivel de día"@es ;
   skos:definition "Nivel equivalente durante el día (de 7:00 a 19:00), teniendo en cuenta toda la variación del sonido a lo largo de un periodo que incluye uno o varios días."@es ;
@@ -61,7 +61,7 @@ edintnoiserefint:Day a skos:Concept ;
 
 edintnoiserefint:Evening a skos:Concept ;
   skos:inScheme edintkos:NoiseReferenceInterval ;
-  skos:notation: "e" ;
+  skos:notation "e" ;
   skos:prefLabel "Evening level"@en ;
   skos:prefLabel "Nivel de tarde"@es ;
   skos:definition "Nivel equivalente durante la tarde (de 19:00 a 23:00), teniendo en cuenta toda la variación del sonido a lo largo de un periodo que incluye uno o varios días."@es ;
@@ -69,17 +69,17 @@ edintnoiserefint:Evening a skos:Concept ;
   
 edintnoiserefint:Night a skos:Concept ;
   skos:inScheme edintkos:NoiseReferenceInterval ;
-  skos:notation: "n" ;
+  skos:notation "n" ;
   skos:prefLabel "Night level"@en ;
   skos:prefLabel "Nivel de noche"@es ;
   skos:definition "Nivel equivalente durante la noche (de 23:00 a 7:00), teniendo en cuenta toda la variación del sonido a lo largo de un periodo que incluye uno o varios días."@es ;
-  skos:definition "Equivalent level throughout the night (from 23:00 to 7:00), taking into account all the variation of the sound over a period that includes one or more days.@en .
+  skos:definition "Equivalent level throughout the night (from 23:00 to 7:00), taking into account all the variation of the sound over a period that includes one or more days."@en .
   
 edintnoiserefint:PeakLevel a skos:Concept ;
   skos:inScheme edintkos:NoiseReferenceInterval ;
-  skos:notation: "peak" ;
+  skos:notation "peak" ;
   skos:note "No tiene en cuenta un periodo de tiempo"@es ;
-  skos:note "It does not take into account a time period"
+  skos:note "It does not take into account a time period" ;
   skos:prefLabel "Nivel pico"@es ;
   skos:prefLabel "Peak level"@en ;
   skos:definition "Pico instantáneo del nivel de presión sonora."@es ;
