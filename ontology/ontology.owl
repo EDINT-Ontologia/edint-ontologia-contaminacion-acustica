@@ -18,7 +18,10 @@
      xmlns:edintemittertype="https://edint.es/kos/EmitterPredominantType/"
      xmlns:edintnoiserefint="https://edint.es/kos/NoiseReferenceInterval/"
      xmlns:edintnoisetimecon="https://edint.es/kos/NoiseTimeConstant/"
-     xmlns:edintnoiseratetype="https://edint.es/kos/NoiseRateType/">
+     xmlns:edintnoiseratetype="https://edint.es/kos/NoiseRateType/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:bibo="http://purl.org/ontology/bibo/">
     <owl:Ontology rdf:about="https://edint.es/def/contaminacion-acustica">
         <owl:versionIRI rdf:resource="https://edint.es/def/contaminacion-acustica"/>
         <owl:imports rdf:resource="https://edint.es/def/medioambiente#"/>
@@ -38,7 +41,12 @@
         <vann:preferredNamespacePrefix>edintacus</vann:preferredNamespacePrefix>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-contaminacion-acustica/releases/tag/v0.2.0"/>
         <owl:versionInfo>0.2.1</owl:versionInfo>
-    </owl:Ontology>
+        <dcterms:publisher rdf:resource="https://www.femp.es/"/>
+    <dcterms:bibliographicCitation xml:lang="es">Ontología de Contaminación Acústica. EDINT.</dcterms:bibliographicCitation>
+    <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
+    <dcterms:abstract xml:lang="es">Esta ontología intenta proporcionar el vocabulario común para representar las principales entidades y datos de sensores y observaciones sobre contaminación acústica. Es una actualización de una &lt;a href="https://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"&gt;versión previa&lt;/a&gt; de la ontología, que adapta esa ontología para cubrir los requisitos del Espacio de Datos para las Infraestructuras Urbanas Inteligentes &lt;a href="https://edint.es/"&gt;(EDINT)&lt;/a&gt;. También amplia la &lt;a href="http://vocab.linkeddata.es/datosabiertos/def/medioambiente/"&gt;ontología de medioambiente&lt;/a&gt; para el caso de la contaminación acústica.</dcterms:abstract>
+    <dcterms:abstract xml:lang="en">This ontology aims to provide the commun vocabulary for representing the main entities and data for sensors and observations on noise pollution. It is an update of a &lt;a href="https://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"&gt;previous version&lt;/a&gt;, which adapts that ontology to comply with &lt;a href="https://edint.es/"&gt;(EDINT)&lt;/a&gt; requirements. It also extends the &lt;a href="http://vocab.linkeddata.es/datosabiertos/def/medioambiente/"&gt;Environmental Sensors Ontology&lt;/a&gt; for noise pollution. </dcterms:abstract>
+</owl:Ontology>
     
 
 
