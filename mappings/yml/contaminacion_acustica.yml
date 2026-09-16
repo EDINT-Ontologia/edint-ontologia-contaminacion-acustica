@@ -5,7 +5,7 @@ prefixes:
   sosa: http://www.w3.org/ns/sosa/
   qudt: http://qudt.org/schema/qudt/
   unit: http://qudt.org/vocab/unit/
-  edintmed: https://edint.es/def/medioambiente#
+  edintmed: https://edint.es/def/medio-ambiente#
   edintkossentype:  https://edint.es/kos/edint/sensortypes/
   edintacus: https://edint.es/def/contaminacion-acustica#
   edintnoiserefint:  https://edint.es/kos/edint/NoiseReferenceInterval/

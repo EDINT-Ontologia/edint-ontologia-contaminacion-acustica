@@ -4,7 +4,7 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/>.
 @prefix qudt: <http://qudt.org/schema/qudt/>.
 @prefix unit: <http://qudt.org/vocab/unit/>.
-@prefix edintmed: <https://edint.es/def/medioambiente#>.
+@prefix edintmed: <https://edint.es/def/medio-ambiente#>.
 @prefix edintkossentype: <https://edint.es/kos/edint/sensortypes/>.
 @prefix edintacus: <https://edint.es/def/contaminacion-acustica#>.
 @prefix edintnoiserefint: <https://edint.es/kos/edint/NoiseReferenceInterval/>.
