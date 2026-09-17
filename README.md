@@ -1,5 +1,9 @@
 # Ontología EDINT de Sensores Medioambientales, caso Contaminación Acústica (EDINT Environmental Sensors Ontology)
 
+[![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/contaminacion-acustica)
+![Prefijo](https://img.shields.io/badge/prefijo-edintacus-informational)
+[![Licencia](https://img.shields.io/badge/licencia-CC%20BY--SA%204.0-lightgrey)](LICENSE)
+
 Este repositorio contiene la extensión de la ontología de Sensores Medioambientales para el caso de contaminación acústica.
 
 Ver también: [Ontología EDINT de Sensores Medioambientales](https://github.com/oeg-upm/edint-ontologia-medio-ambiente)
