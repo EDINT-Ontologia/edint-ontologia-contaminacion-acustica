@@ -7,7 +7,7 @@ Ver también: [Ontología EDINT de Sensores Medioambientales](https://github.com
 
 # Propósito y alcance de la ontología (Purpose and scope of the ontology)
 
- La ontología de Sensores de Medioambiente ha sufrido una pequeña ampliación para reflejar os aspectos específicos de las observaciones de ruido.
+La ontología de Sensores Medioambientales ha sufrido una pequeña ampliación para reflejar los aspectos específicos de las observaciones de ruido.
 
 # Prefijo y espacio de nombres (Prefix and namespace)
 
