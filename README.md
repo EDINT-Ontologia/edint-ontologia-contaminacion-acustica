@@ -1,4 +1,4 @@
-# Ontología EDINT de Contaminación Acústica
+# Ontología EDINT de Sensores Medioambientales, caso Contaminación Acústica (EDINT Environmental Sensors Ontology)
 
 Este repositorio contiene la extensión de la ontología de Sensores Medioambientales para el caso de contaminación acústica.
 
