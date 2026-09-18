@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://edint.es/def/contaminacion-acustica#"
      xml:base="https://edint.es/def/contaminacion-acustica"
-     xmlns:dct="http://purl.org/dc/terms/"
      xmlns:geo="http://www.opengis.net/ont/geosparql#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -20,38 +19,38 @@
      xmlns:edintnoisetimecon="https://edint.es/kos/NoiseTimeConstant/"
      xmlns:edintnoiseratetype="https://edint.es/kos/NoiseRateType/"
      xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:schema="http://schema.org/"
+     xmlns:schema="https://schema.org/"
      xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:widoco="https://w3id.org/widoco/vocab#">    <owl:Ontology rdf:about="https://edint.es/def/contaminacion-acustica">
         <owl:versionIRI rdf:resource="https://edint.es/def/contaminacion-acustica/0.2.1"/>
         <owl:imports rdf:resource="https://edint.es/def/medioambiente#"/>
-        <dct:creator rdf:parseType="Resource">
+        <dcterms:creator rdf:parseType="Resource">
             <foaf:name>Daniel Doña</foaf:name>
             <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
-        </dct:creator>
-        <dct:creator rdf:parseType="Resource">
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
             <foaf:name>Edna Ruckhaus</foaf:name>
             <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
-        </dct:creator>
-        <dct:creator rdf:parseType="Resource">
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
             <foaf:name>Lucía Sánchez</foaf:name>
             <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
-        </dct:creator>
-        <dct:creator rdf:parseType="Resource">
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
             <foaf:name>Maria del Socorro Bernardos</foaf:name>
             <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
-        </dct:creator>
-        <dct:creator rdf:parseType="Resource">
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
             <foaf:name>Oscar Corcho</foaf:name>
             <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
-        </dct:creator>
-        <dct:description xml:lang="en">A lightweight ontology extending the medioambiente EDIT Ontology to represent noise pollution, restricting their observations to the EDINT SKOS controlled vocabulary.</dct:description>
-        <dct:description xml:lang="es">Una ontología ligera que extiende la ontología EDINT de medioambiente para representar contaminación acústica, restringiendo sus mediciones al vocabulario controlado SKOS de EDINT.</dct:description>
-        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dct:title xml:lang="en">EDINT Noise Pollution Ontology</dct:title>
+        </dcterms:creator>
+        <dcterms:description xml:lang="en">A lightweight ontology extending the medioambiente EDIT Ontology to represent noise pollution, restricting their observations to the EDINT SKOS controlled vocabulary.</dcterms:description>
+        <dcterms:description xml:lang="es">Una ontología ligera que extiende la ontología EDINT de medioambiente para representar contaminación acústica, restringiendo sus mediciones al vocabulario controlado SKOS de EDINT.</dcterms:description>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:title xml:lang="en">EDINT Noise Pollution Ontology</dcterms:title>
         <rdfs:label xml:lang="es">Contaminación Acústica</rdfs:label>
         <rdfs:label xml:lang="en">Noise Pollution</rdfs:label>
-        <dct:title xml:lang="es">Ontología EDINT de Contaminación Acústica</dct:title>
+        <dcterms:title xml:lang="es">Ontología EDINT de Contaminación Acústica</dcterms:title>
         <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/contaminacion-acustica#"/>
         <vann:preferredNamespacePrefix>edintacus</vann:preferredNamespacePrefix>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-contaminacion-acustica/releases/tag/v0.2.0"/>
