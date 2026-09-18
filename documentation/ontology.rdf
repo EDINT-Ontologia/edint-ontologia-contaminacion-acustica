@@ -1,33 +1,82 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://edint.es/def/contaminacionacustica#"
-     xml:base="https://edint.es/def/contaminacionacustica"
+<rdf:RDF xmlns="https://edint.es/def/contaminacion-acustica#"
+     xml:base="https://edint.es/def/contaminacion-acustica"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://edint.es/def/contaminacionacustica">
-        <owl:versionIRI rdf:resource="https://edint.es/def/contaminacionacustica"/>
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vocab="https://w3id.org/widoco/vocab#"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="https://edint.es/def/contaminacion-acustica">
+        <owl:versionIRI rdf:resource="https://edint.es/def/contaminacion-acustica/0.2.1"/>
         <owl:imports rdf:resource="https://edint.es/def/medioambiente#"/>
-        <terms:creator xml:lang="es">Daniel Doña</terms:creator>
-        <terms:creator>Edna Ruckhaus</terms:creator>
-        <terms:creator>Lucía Sánchez</terms:creator>
-        <terms:creator>Maria del Socorro Bernardos</terms:creator>
-        <terms:creator>Oscar Corcho</terms:creator>
+        <terms:abstract xml:lang="es">Esta ontología intenta proporcionar el vocabulario común para representar las principales entidades y datos de sensores y observaciones sobre contaminación acústica. Es una actualización de una &lt;a href=&quot;https://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html&quot;&gt;versión previa&lt;/a&gt; de la ontología, que adapta esa ontología para cubrir los requisitos del Espacio de Datos para las Infraestructuras Urbanas Inteligentes &lt;a href=&quot;https://edint.es/&quot;&gt;(EDINT)&lt;/a&gt;. También amplia la &lt;a href=&quot;http://vocab.linkeddata.es/datosabiertos/def/medioambiente/&quot;&gt;ontología de medioambiente&lt;/a&gt; para el caso de la contaminación acústica.</terms:abstract>
+        <terms:abstract xml:lang="en">This ontology aims to provide the commun vocabulary for representing the main entities and data for sensors and observations on noise pollution. It is an update of a &lt;a href=&quot;https://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html&quot;&gt;previous version&lt;/a&gt;, which adapts that ontology to comply with &lt;a href=&quot;https://edint.es/&quot;&gt;(EDINT)&lt;/a&gt; requirements. It also extends the &lt;a href=&quot;http://vocab.linkeddata.es/datosabiertos/def/medioambiente/&quot;&gt;Environmental Sensors Ontology&lt;/a&gt; for noise pollution. </terms:abstract>
+        <terms:bibliographicCitation xml:lang="en">EDINT Noise Pollution Ontology. EDINT. Revision: v0.2.1.</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="es">Ontología EDINT de Contaminación Acústica. EDINT. Revisión: v0.2.1.</terms:bibliographicCitation>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-27</terms:created>
+        <terms:creator rdf:nodeID="genid1"/>
+        <terms:creator rdf:nodeID="genid2"/>
+        <terms:creator rdf:nodeID="genid3"/>
+        <terms:creator rdf:nodeID="genid4"/>
+        <terms:creator rdf:nodeID="genid5"/>
         <terms:description xml:lang="en">A lightweight ontology extending the medioambiente EDIT Ontology to represent noise pollution, restricting their observations to the EDINT SKOS controlled vocabulary.</terms:description>
         <terms:description xml:lang="es">Una ontología ligera que extiende la ontología EDINT de medioambiente para representar contaminación acústica, restringiendo sus mediciones al vocabulario controlado SKOS de EDINT.</terms:description>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-27</terms:issued>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-14</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-27</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-14</terms:modified>
+        <terms:publisher rdf:nodeID="genid6"/>
         <terms:title xml:lang="en">EDINT Noise Pollution Ontology</terms:title>
         <terms:title xml:lang="es">Ontología EDINT de Contaminación Acústica</terms:title>
-        <vann:preferredNamespacePrefix rdf:resource="https://edint.es/def/contaminacionacustica#"/>
         <vann:preferredNamespacePrefix>edintacus</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/contaminacion-acustica#"/>
+        <schema:codeRepository rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-contaminacion-acustica"/>
+        <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
+        <schema:funding>Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)</schema:funding>
+        <rdfs:label xml:lang="es">Contaminación Acústica</rdfs:label>
+        <rdfs:label xml:lang="en">Noise Pollution</rdfs:label>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-contaminacion-acustica/releases/tag/v0.2.0"/>
         <owl:versionInfo>0.2.1</owl:versionInfo>
+        <vocab:jsonldSerialization>ontology.jsonld</vocab:jsonldSerialization>
+        <vocab:ntSerialization>ontology.nt</vocab:ntSerialization>
+        <vocab:rdfxmlSerialization>ontology.rdf</vocab:rdfxmlSerialization>
+        <vocab:turtleSerialization>ontology.ttl</vocab:turtleSerialization>
+        <vocab:vocabularyLabel rdf:nodeID="genid7"/>
     </owl:Ontology>
+    <rdf:Description rdf:nodeID="genid1">
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <foaf:name>Daniel Doña</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid2">
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <foaf:name>Edna Ruckhaus</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid3">
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <foaf:name>Lucía Sánchez</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid4">
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <foaf:name>Maria del Socorro Bernardos</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid5">
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <foaf:name>Oscar Corcho</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid6">
+        <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+        <foaf:homepage rdf:resource="https://www.femp.es/"/>
+        <foaf:name>FEMP</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid7">
+        <rdfs:label xml:lang="en">Environmental Sensors (edintmed)</rdfs:label>
+        <rdfs:label xml:lang="es">Sensores Medioambientales (edintmed)</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="https://edint.es/def/medioambiente#"/>
+    </rdf:Description>
     
 
 
@@ -40,6 +89,27 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
@@ -78,6 +148,13 @@
     
 
 
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
     <!-- http://purl.org/dc/terms/title -->
 
 
@@ -96,6 +173,90 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/affiliation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/affiliation"/>
+    
+
+
+    <!-- http://schema.org/codeRepository -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/codeRepository"/>
+    
+
+
+    <!-- http://schema.org/creativeWorkStatus -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/creativeWorkStatus"/>
+    
+
+
+    <!-- http://schema.org/funding -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/funding"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#jsonldSerialization -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#jsonldSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#ntSerialization -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#ntSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#rdfxmlSerialization -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#rdfxmlSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#turtleSerialization -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#turtleSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#vocabularyIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#vocabularyIRI"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#vocabularyLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#vocabularyLabel"/>
     
 
 
@@ -139,11 +300,11 @@
     
 
 
-    <!-- https://edint.es/def/contaminacionacustica#noiseEmitterPredominantType -->
+    <!-- https://edint.es/def/contaminacion-acustica#noiseEmitterPredominantType -->
 
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacionacustica#noiseEmitterPredominantType">
-        <rdfs:domain rdf:resource="https://edint.es/def/contaminacionacustica#NoiseObservation"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacion-acustica#noiseEmitterPredominantType">
+        <rdfs:domain rdf:resource="https://edint.es/def/contaminacion-acustica#NoiseObservation"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -163,11 +324,11 @@
     
 
 
-    <!-- https://edint.es/def/contaminacionacustica#noisePonderation -->
+    <!-- https://edint.es/def/contaminacion-acustica#noisePonderation -->
 
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacionacustica#noisePonderation">
-        <rdfs:domain rdf:resource="https://edint.es/def/contaminacionacustica#NoiseObservation"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacion-acustica#noisePonderation">
+        <rdfs:domain rdf:resource="https://edint.es/def/contaminacion-acustica#NoiseObservation"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -187,11 +348,11 @@
     
 
 
-    <!-- https://edint.es/def/contaminacionacustica#noiseRateType -->
+    <!-- https://edint.es/def/contaminacion-acustica#noiseRateType -->
 
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacionacustica#noiseRateType">
-        <rdfs:domain rdf:resource="https://edint.es/def/contaminacionacustica#NoiseObservation"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacion-acustica#noiseRateType">
+        <rdfs:domain rdf:resource="https://edint.es/def/contaminacion-acustica#NoiseObservation"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -211,11 +372,11 @@
     
 
 
-    <!-- https://edint.es/def/contaminacionacustica#noiseReferenceInterval -->
+    <!-- https://edint.es/def/contaminacion-acustica#noiseReferenceInterval -->
 
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacionacustica#noiseReferenceInterval">
-        <rdfs:domain rdf:resource="https://edint.es/def/contaminacionacustica#NoiseObservation"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacion-acustica#noiseReferenceInterval">
+        <rdfs:domain rdf:resource="https://edint.es/def/contaminacion-acustica#NoiseObservation"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -235,11 +396,11 @@
     
 
 
-    <!-- https://edint.es/def/contaminacionacustica#noiseTimeConstantType -->
+    <!-- https://edint.es/def/contaminacion-acustica#noiseTimeConstantType -->
 
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacionacustica#noiseTimeConstantType">
-        <rdfs:domain rdf:resource="https://edint.es/def/contaminacionacustica#NoiseObservation"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/contaminacion-acustica#noiseTimeConstantType">
+        <rdfs:domain rdf:resource="https://edint.es/def/contaminacion-acustica#NoiseObservation"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -310,10 +471,10 @@
     
 
 
-    <!-- https://edint.es/def/contaminacionacustica#NoiseObservation -->
+    <!-- https://edint.es/def/contaminacion-acustica#NoiseObservation -->
 
 
-    <owl:Class rdf:about="https://edint.es/def/contaminacionacustica#NoiseObservation">
+    <owl:Class rdf:about="https://edint.es/def/contaminacion-acustica#NoiseObservation">
         <rdfs:subClassOf rdf:resource="https://edint.es/def/medioambiente#EnvironmentalObservation"/>
         <rdfs:comment xml:lang="en">An observation of a noise property made by a noise sensor</rdfs:comment>
         <rdfs:comment xml:lang="es">Una observación de una propiedad acústica realizada por un sensor acústico</rdfs:comment>
@@ -396,6 +557,21 @@
         <rdfs:label xml:lang="en">Noise time constant type</rdfs:label>
         <rdfs:label xml:lang="es">Tipo de constante de tiempo para el ruido</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://oeg.fi.upm.es/">
+        <foaf:name>Ontology Engineering Group, UPM</foaf:name>
+    </rdf:Description>
 </rdf:RDF>
 
 
