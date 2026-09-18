@@ -1,4 +1,4 @@
-# Ontología EDINT de Sensores Medioambientales, caso Contaminación Acústica (EDINT Environmental Sensors Ontology)
+# Ontología EDINT de Contaminación Acústica
 
 [![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/contaminacion-acustica)
 ![Prefijo](https://img.shields.io/badge/prefijo-edintacus-informational)
