@@ -49,6 +49,8 @@
         <dct:description xml:lang="es">Una ontología ligera que extiende la ontología EDINT de medioambiente para representar contaminación acústica, restringiendo sus mediciones al vocabulario controlado SKOS de EDINT.</dct:description>
         <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dct:title xml:lang="en">EDINT Noise Pollution Ontology</dct:title>
+        <rdfs:label xml:lang="es">Contaminación Acústica</rdfs:label>
+        <rdfs:label xml:lang="en">Noise Pollution</rdfs:label>
         <dct:title xml:lang="es">Ontología EDINT de Contaminación Acústica</dct:title>
         <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/contaminacion-acustica#"/>
         <vann:preferredNamespacePrefix>edintacus</vann:preferredNamespacePrefix>
