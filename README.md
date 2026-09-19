@@ -1,23 +1,27 @@
-# Ontología EDINT de Sensores Medioambientales, caso Contaminación Acústica (EDINT Environmental Sensors Ontology)
+# Ontología EDINT de Contaminación Acústica
+
+[![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/contaminacion-acustica)
+![Prefijo](https://img.shields.io/badge/prefijo-edintacus-informational)
+[![Licencia](https://img.shields.io/badge/licencia-CC%20BY--SA%204.0-lightgrey)](LICENSE)
 
 Este repositorio contiene la extensión de la ontología de Sensores Medioambientales para el caso de contaminación acústica.
 
 Ver también: [Ontología EDINT de Sensores Medioambientales](https://github.com/oeg-upm/edint-ontologia-medio-ambiente)
 
 
-# Propósito y alcance de la ontología (Purpose and scope of the ontology)
+## Propósito y alcance de la ontología (Purpose and scope of the ontology)
 
- La ontología de Sensores de Medioambiente ha sufrido una pequeña ampliación para reflejar os aspectos específicos de las observaciones de ruido.
+La ontología de Sensores Medioambientales ha sufrido una pequeña ampliación para reflejar los aspectos específicos de las observaciones de ruido.
 
-# Prefijo y espacio de nombres (Prefix and namespace)
+## Prefijo y espacio de nombres (Prefix and namespace)
 
-El prefijo de la ontología de *Contaminación Acústica* es: `edintacus` publicado bajo el espacio de nombres: [https://edint.es/def/contaminacion-acustica#](https://edint.es/def/contaminacion-acustica#)
+El prefijo de esta ontología es `edintacus` y se publica bajo el espacio de nombres https://edint.es/def/contaminacion-acustica#
 
-# Modelo conceptual (Ontology conceptualization)
+## Modelo conceptual (Ontology conceptualization)
 
 ![Ontology Conceptualization Diagram](diagrams/diagram.png)
 
-# Estructura del repositorio (Repository structure)
+## Estructura del repositorio (Repository structure)
 
 | Carpeta | Descripción |
 |--------|--------------|
@@ -29,11 +33,11 @@ El prefijo de la ontología de *Contaminación Acústica* es: `edintacus` public
 | **requirements/** | Contiene todos los documentos utilizados para definir los requisitos de la ontología: ejemplos de datos, preguntas de competencia, requisitos funcionales, casos de uso, etc. |
 | **shapes/**       | Contiene los SHACL shapes utilizadas para definir y validar las restricciones de la ontología.                                                                                |
 
-# Mantenimiento y evolución (Maintenance and evolution)
+## Mantenimiento y evolución (Maintenance and evolution)
 
 Para manejar las incidencias o mejoras sugeridas con respecto a la ontología, recomendamos seguir las guías proporcionadas en ([Issues Management](./ISSUES.md)) para generar una incidencia.
 
-# Financiación (Funding)
+## Financiación (Funding)
 
 Esta ontología ha sido desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es)).
 
