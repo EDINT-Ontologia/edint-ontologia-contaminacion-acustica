@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://edint.es/def/contaminacion-acustica#"
      xml:base="https://edint.es/def/contaminacion-acustica"
-     xmlns:dct="http://purl.org/dc/terms/"
      xmlns:geo="http://www.opengis.net/ont/geosparql#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -18,27 +17,63 @@
      xmlns:edintemittertype="https://edint.es/kos/EmitterPredominantType/"
      xmlns:edintnoiserefint="https://edint.es/kos/NoiseReferenceInterval/"
      xmlns:edintnoisetimecon="https://edint.es/kos/NoiseTimeConstant/"
-     xmlns:edintnoiseratetype="https://edint.es/kos/NoiseRateType/">
-    <owl:Ontology rdf:about="https://edint.es/def/contaminacion-acustica">
-        <owl:versionIRI rdf:resource="https://edint.es/def/contaminacion-acustica"/>
-        <owl:imports rdf:resource="https://edint.es/def/medio-ambiente#"/>
-        <dct:creator xml:lang="es">Daniel Doña</dct:creator>
-        <dct:creator>Edna Ruckhaus</dct:creator>
-        <dct:creator>Lucía Sánchez</dct:creator>
-        <dct:creator>Maria del Socorro Bernardos</dct:creator>
-        <dct:creator>Oscar Corcho</dct:creator>
-        <dct:description xml:lang="en">A lightweight ontology extending the medioambiente EDIT Ontology to represent noise pollution, restricting their observations to the EDINT SKOS controlled vocabulary.</dct:description>
-        <dct:description xml:lang="es">Una ontología ligera que extiende la ontología EDINT de medioambiente para representar contaminación acústica, restringiendo sus mediciones al vocabulario controlado SKOS de EDINT.</dct:description>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-27</dct:issued>
-        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-27</dct:modified>
-        <dct:title xml:lang="en">EDINT Noise Pollution Ontology</dct:title>
-        <dct:title xml:lang="es">Ontología EDINT de Contaminación Acústica</dct:title>
-        <vann:preferredNamespacePrefix rdf:resource="https://edint.es/def/contaminacion-acustica#"/>
+     xmlns:edintnoiseratetype="https://edint.es/kos/NoiseRateType/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/"
+     xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:widoco="https://w3id.org/widoco/vocab#">    <owl:Ontology rdf:about="https://edint.es/def/contaminacion-acustica">
+        <owl:versionIRI rdf:resource="https://edint.es/def/contaminacion-acustica/0.2.1"/>
+        <owl:imports rdf:resource="https://edint.es/def/medioambiente#"/>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Daniel Doña</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Edna Ruckhaus</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Lucía Sánchez</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Maria del Socorro Bernardos</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Oscar Corcho</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:description xml:lang="en">A lightweight ontology extending the medioambiente EDIT Ontology to represent noise pollution, restricting their observations to the EDINT SKOS controlled vocabulary.</dcterms:description>
+        <dcterms:description xml:lang="es">Una ontología ligera que extiende la ontología EDINT de medioambiente para representar contaminación acústica, restringiendo sus mediciones al vocabulario controlado SKOS de EDINT.</dcterms:description>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:title xml:lang="en">EDINT Noise Pollution Ontology</dcterms:title>
+        <rdfs:label xml:lang="es">Contaminación Acústica</rdfs:label>
+        <rdfs:label xml:lang="en">Noise Pollution</rdfs:label>
+        <dcterms:title xml:lang="es">Ontología EDINT de Contaminación Acústica</dcterms:title>
+        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/contaminacion-acustica#"/>
         <vann:preferredNamespacePrefix>edintacus</vann:preferredNamespacePrefix>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-contaminacion-acustica/releases/tag/v0.2.0"/>
+        <schema:codeRepository rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-contaminacion-acustica"/>
+        <schema:funding>Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)</schema:funding>
         <owl:versionInfo>0.2.1</owl:versionInfo>
-    </owl:Ontology>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-27</dcterms:created>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-14</dcterms:modified>
+        <dcterms:publisher rdf:parseType="Resource">
+            <foaf:name>FEMP</foaf:name>
+            <foaf:homepage rdf:resource="https://www.femp.es/"/>
+            <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+        </dcterms:publisher>
+    <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT de Contaminación Acústica. EDINT. Revisión: v0.2.1.</dcterms:bibliographicCitation>
+    <dcterms:bibliographicCitation xml:lang="en">EDINT Noise Pollution Ontology. EDINT. Revision: v0.2.1.</dcterms:bibliographicCitation>
+    <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
+    <dcterms:abstract xml:lang="es">Esta ontología intenta proporcionar el vocabulario común para representar las principales entidades y datos de sensores y observaciones sobre contaminación acústica. Es una actualización de una &lt;a href="https://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"&gt;versión previa&lt;/a&gt; de la ontología, que adapta esa ontología para cubrir los requisitos del Espacio de Datos para las Infraestructuras Urbanas Inteligentes &lt;a href="https://edint.es/"&gt;(EDINT)&lt;/a&gt;. También amplia la &lt;a href="http://vocab.linkeddata.es/datosabiertos/def/medioambiente/"&gt;ontología de medioambiente&lt;/a&gt; para el caso de la contaminación acústica.</dcterms:abstract>
+    <dcterms:abstract xml:lang="en">This ontology aims to provide the commun vocabulary for representing the main entities and data for sensors and observations on noise pollution. It is an update of a &lt;a href="https://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"&gt;previous version&lt;/a&gt;, which adapts that ontology to comply with &lt;a href="https://edint.es/"&gt;(EDINT)&lt;/a&gt; requirements. It also extends the &lt;a href="http://vocab.linkeddata.es/datosabiertos/def/medioambiente/"&gt;Environmental Sensors Ontology&lt;/a&gt; for noise pollution. </dcterms:abstract>
+</owl:Ontology>
+    <foaf:Organization rdf:about="https://oeg.fi.upm.es/">
+        <foaf:name>Ontology Engineering Group, UPM</foaf:name>
+    </foaf:Organization>
     
 
 
@@ -376,6 +411,20 @@
         <rdfs:label xml:lang="en">Noise time constant type</rdfs:label>
         <rdfs:label xml:lang="es">Tipo de constante de tiempo para el ruido</rdfs:label>
     </owl:NamedIndividual>
+    <!-- Nombres de fichero de las serializaciones generadas (vocabulario Widoco) -->
+    <owl:Ontology rdf:about="https://edint.es/def/contaminacion-acustica">
+        <widoco:rdfxmlSerialization>ontology.rdf</widoco:rdfxmlSerialization>
+        <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
+        <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
+        <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
+            <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/medioambiente#"/>
+                <rdfs:label xml:lang="es">Sensores Medioambientales (edintmed)</rdfs:label>
+                <rdfs:label xml:lang="en">Environmental Sensors (edintmed)</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+</owl:Ontology>
 </rdf:RDF>
 
 
