@@ -11,7 +11,7 @@
      xmlns:sosa="http://www.w3.org/ns/sosa/"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:edintkos="https://edint.es/kos/"
-     xmlns:edintmed="https://edint.es/def/medioambiente#"
+     xmlns:edintmed="https://edint.es/def/medio-ambiente#"
      xmlns:edintacus="https://edint.es/def/contaminacion-acustica#"
      xmlns:edintnoisepon="https://edint.es/kos/NoisePonderation/"
      xmlns:edintemittertype="https://edint.es/kos/EmitterPredominantType/"
@@ -336,7 +336,7 @@
     <!-- https://edint.es/def/contaminacion-acustica#NoiseObservation -->
 
     <owl:Class rdf:about="https://edint.es/def/contaminacion-acustica#NoiseObservation">
-        <rdfs:subClassOf rdf:resource="https://edint.es/def/medioambiente#EnvironmentalObservation"/>
+        <rdfs:subClassOf rdf:resource="https://edint.es/def/medio-ambiente#EnvironmentalObservation"/>
         <rdfs:comment xml:lang="en">An observation of a noise property made by a noise sensor</rdfs:comment>
         <rdfs:comment xml:lang="es">Una observación de una propiedad acústica realizada por un sensor acústico</rdfs:comment>
         <rdfs:label xml:lang="en">Noise observation</rdfs:label>
@@ -345,10 +345,10 @@
     
 
 
-    <!-- https://edint.es/def/medioambiente#EnvironmentalObservation -->
+    <!-- https://edint.es/def/medio-ambiente#EnvironmentalObservation -->
 
-    <owl:Class rdf:about="https://edint.es/def/medioambiente#EnvironmentalObservation">
-        <rdfs:isDefinedBy rdf:resource="https://edint.es/def/medioambiente#"/>
+    <owl:Class rdf:about="https://edint.es/def/medio-ambiente#EnvironmentalObservation">
+        <rdfs:isDefinedBy rdf:resource="https://edint.es/def/medio-ambiente#"/>
     </owl:Class>
     
 

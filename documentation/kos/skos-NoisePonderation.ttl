@@ -37,15 +37,15 @@ edintkos:NoisePonderation a skos:ConceptScheme ;
 
 edintnoisepon:A a skos:Concept ;
   skos:inScheme edintkos:NoisePonderation ;
-  skos:notation: "A" ;
+  skos:notation "A" ;
   skos:prefLabel "Ponderación A"@es ;
   skos:prefLabel "A weighting"@en ;
   skos:definition "Ponderación ajustada a la sensibilidad del oído humano"@es ;
-  skos:definition "Weighting adjusted to the sensitivity of the human ear." @en .
+  skos:definition "Weighting adjusted to the sensitivity of the human ear."@en .
   
 edintnoisepon:C a skos:Concept ;
   skos:inScheme edintkos:NoisePonderation ;
-  skos:notation: "C" ;
+  skos:notation "C" ;
   skos:prefLabel "C weighting"@es ;
   skos:prefLabel "Ponderación C"@en ;
   skos:definition "Ponderación que apenas atenúa las bajas frecuencias. Representa mejor sonidos de alta intensidad"@es ;
