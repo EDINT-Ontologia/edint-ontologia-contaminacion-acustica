@@ -25,9 +25,7 @@ edintkos:NoiseRateType a skos:ConceptScheme ;
     rdfs:label "Type of rate for sound pressure level"@en ;
     rdfs:label "Tipo de índice para el nivel de presión sonora"@es ;
     dct:title "Concept scheme grouping types of rate for sound pressure level"@en ;
-    dct:title "Esquema de conceptos que agrupa tipos de índice para el nivel de presión sonora"@es ;
-    skos:note "Values currently based on the list of values included in http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tipo-medicion-acustica"@en ;
-    skos:note "Valores basados inicialmente en la lista de valores de http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tipo-medicion-acustica"@es .
+    dct:title "Esquema de conceptos que agrupa tipos de índice para el nivel de presión sonora"@es .
 
 
 
