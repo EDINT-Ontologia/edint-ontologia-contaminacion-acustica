@@ -23,7 +23,7 @@
      xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:widoco="https://w3id.org/widoco/vocab#">    <owl:Ontology rdf:about="https://edint.es/def/contaminacion-acustica">
         <owl:versionIRI rdf:resource="https://edint.es/def/contaminacion-acustica/0.2.1"/>
-        <owl:imports rdf:resource="https://edint.es/def/medioambiente#"/>
+        <owl:imports rdf:resource="https://edint.es/def/medio-ambiente#"/>
         <dcterms:creator rdf:parseType="Resource">
             <foaf:name>Daniel Doña</foaf:name>
             <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
@@ -419,7 +419,7 @@
         <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
             <widoco:vocabularyLabel>
             <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/medioambiente#"/>
+                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/medio-ambiente#"/>
                 <rdfs:label xml:lang="es">Sensores Medioambientales (edintmed)</rdfs:label>
                 <rdfs:label xml:lang="en">Environmental Sensors (edintmed)</rdfs:label>
             </rdf:Description>
