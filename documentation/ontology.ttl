@@ -22,7 +22,7 @@
                                                <http://purl.org/dc/terms/description> "A lightweight ontology extending the medioambiente EDIT Ontology to represent noise pollution, restricting their observations to the EDINT SKOS controlled vocabulary."@en ,
                                                                                       "Una ontología ligera que extiende la ontología EDINT de medioambiente para representar contaminación acústica, restringiendo sus mediciones al vocabulario controlado SKOS de EDINT."@es ;
                                                <http://purl.org/dc/terms/issued> "2026-09-14"^^xsd:date ;
-                                               <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                               <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> ;
                                                <http://purl.org/dc/terms/modified> "2026-09-14"^^xsd:date ;
                                                <http://purl.org/dc/terms/publisher> _:genid6 ;
                                                <http://purl.org/dc/terms/title> "EDINT Noise Pollution Ontology"@en ,
