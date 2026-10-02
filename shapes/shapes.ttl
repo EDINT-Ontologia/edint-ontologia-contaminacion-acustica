@@ -1,0 +1,94 @@
+@prefix : <https://edint.es/def/contaminacion-acustica#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix edintmed: <https://edint.es/def/medio-ambiente#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://astrea.linkeddata.es/shapes#2453f89fa1021b39109e26dae71216fc> rdfs:label "Property that links a noise observation to its measurement period"@en,
+        "noise reference interval"@en,
+        "Propiedad que  vincula una observación de ruido a su periodo de medición"@es,
+        "intervalo de referencia para ruido"@es ;
+    sh:description "Property that links a noise observation to its measurement period"@en,
+        "Propiedad que  vincula una observación de ruido a su periodo de medición"@es ;
+    sh:name "noise reference interval"@en,
+        "intervalo de referencia para ruido"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#4b8421f024b52eae76b684497edeafb2> rdfs:label "Property that links a noise observation to its weighting."@en,
+        "noise ponderation"@en,
+        "Propiedad que vincula una observación de ruido  a su ponderación."@es,
+        "ponderación de ruido"@es ;
+    sh:description "Property that links a noise observation to its weighting."@en,
+        "Propiedad que vincula una observación de ruido  a su ponderación."@es ;
+    sh:name "noise ponderation"@en,
+        "ponderación de ruido"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#5a8a7d7820e98881c523a9fbf0ba1d7b> rdfs:label "Property that links a noise observation to its type of level for noise pressure level."@en,
+        "type of rate for noise pressure level"@en,
+        "Propiedad que vincula una observación acústica con su tipo de índice para el nivel de presión sonora."@es,
+        "tipo de índice para ruido"@es ;
+    sh:description "Property that links a noise observation to its type of level for noise pressure level."@en,
+        "Propiedad que vincula una observación acústica con su tipo de índice para el nivel de presión sonora."@es ;
+    sh:name "type of rate for noise pressure level"@en,
+        "tipo de índice para ruido"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#65b1cd214b70fa0ce91dd2b4987740e8> a sh:NodeShape ;
+    rdfs:isDefinedBy edintmed: ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass edintmed:EnvironmentalObservation .
+
+<https://astrea.linkeddata.es/shapes#69bfc24827569ed9036ecae89a53d3c7> a sh:PropertyShape ;
+    rdfs:isDefinedBy skos: ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path skos:inScheme .
+
+<https://astrea.linkeddata.es/shapes#7b77feb583a6a3c9f055e2b66db72ca8> a sh:NodeShape ;
+    rdfs:label "Noise observation"@en,
+        "Observación acústica"@es ;
+    sh:description "An observation of a noise property made by a noise sensor"@en,
+        "Una observación de una propiedad acústica realizada por un sensor acústico"@es ;
+    sh:name "Noise observation"@en,
+        "Observación acústica"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :NoiseObservation .
+
+<https://astrea.linkeddata.es/shapes#873eb40e7ea4e55802c531a029a09d4d> rdfs:label "Property that links a noise observation to its predominant type of emitter."@en,
+        "pedominant type of noise emitter"@en,
+        "Propiedad que vincula una observación de ruido a su tipo predominante de emisor"@es,
+        "tipo de emisor de ruido predominante"@es ;
+    sh:description "Property that links a noise observation to its predominant type of emitter."@en,
+        "Propiedad que vincula una observación de ruido a su tipo predominante de emisor"@es ;
+    sh:name "pedominant type of noise emitter"@en,
+        "tipo de emisor de ruido predominante"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#9e8fc937658bda7beceb6a3c16537508> a sh:PropertyShape ;
+    rdfs:isDefinedBy dcterms: ;
+    sh:nodeKind sh:Literal ;
+    sh:path dcterms:identifier .
+
+<https://astrea.linkeddata.es/shapes#aef1a78016b3598e01dd7671934b50b4> a sh:NodeShape ;
+    rdfs:isDefinedBy skos: ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass skos:ConceptScheme .
+
+<https://astrea.linkeddata.es/shapes#b8840ae319dd17775a4c3ff2c43caeca> sh:nodeKind sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#e06ead2fdb33245a2a4f8be6ff6d082b> rdfs:label "Property that links a noise observation to its type of time constant."@en,
+        "type of noise time constant"@en,
+        "Propiedad que vincula una observación de ruido a su tipo de constante de tiempo."@es,
+        "tipo de constante de tiempo para el ruido"@es ;
+    sh:description "Property that links a noise observation to its type of time constant."@en,
+        "Propiedad que vincula una observación de ruido a su tipo de constante de tiempo."@es ;
+    sh:name "type of noise time constant"@en,
+        "tipo de constante de tiempo para el ruido"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#ffeaf0d3664c31215f614a64f5bb45a5> a sh:NodeShape ;
+    rdfs:isDefinedBy skos: ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass skos:Concept .
+
