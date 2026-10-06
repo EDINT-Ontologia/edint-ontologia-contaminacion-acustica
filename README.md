@@ -6,7 +6,7 @@
 
 Este repositorio contiene la extensión de la ontología de Sensores Medioambientales para el caso de contaminación acústica.
 
-Ver también: [Ontología EDINT de Sensores Medioambientales](https://github.com/oeg-upm/edint-ontologia-medio-ambiente)
+Ver también: [Ontología EDINT de Sensores Medioambientales](https://github.com/EDINT-Ontologia/edint-ontologia-medio-ambiente)
 
 
 ## Propósito y alcance de la ontología (Purpose and scope of the ontology)

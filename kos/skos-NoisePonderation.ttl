@@ -19,13 +19,13 @@
 edintkos:NoisePonderation a skos:ConceptScheme ; 
     dct:issued "2026-03-27"^^xsd:date ;
     dct:modified "2026-03-27"^^xsd:date ;
-    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the ontologies from the EDINT data space."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por las ontologías del espacio de datos EDINT."@es ;
-    rdfs:label "Type of time constant for sound pressure level measurement, i.e., how quickly the equipment responds to changes in sound."@en ;
-    rdfs:label "Tipo de constante de tiempo para medición del nivel de presión sonora, es decir, cómo de rápido responde el equipo a los cambios del sonido."@es ;
+    rdfs:label "Ponderation for the sound pressure level."@en ;
+    rdfs:label "Ponderación para el nivel de presión sonora."@es ;
     dct:title "Conceptual scheme grouping the ponderation for sound pressure level"@en ;
-    dct:title "Esquema de conceptos que agrupa la poderación para el nivel de presión sonora"@es .
+    dct:title "Esquema de conceptos que agrupa la ponderación para el nivel de presión sonora"@es .
 
 
 
