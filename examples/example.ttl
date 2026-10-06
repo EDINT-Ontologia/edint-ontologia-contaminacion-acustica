@@ -14,12 +14,12 @@
 @prefix edintkossentype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/sensortypes/> .
 
 @prefix edintacus: <https://edint.es/def/contaminacion-acustica#> .
-@prefix edintemittertype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/EmitterPredominantType/> .
+@prefix edintemittertype: <https://edint.es/kos/NoiseEmitterPredominantType/> .
 @prefix edintnoiseratetype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType/> .
-@prefix edintnoiserefint: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseReferenceInterval/> .
-@prefix edintnoisetimecon: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseTimeConstantType/> .
-@prefix edintnoiseratetype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType/> .
-@prefix edintnoisepon: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoisePonderation/> .
+@prefix edintnoiserefint: <https://edint.es/kos/NoiseReferenceInterval/> .
+@prefix edintnoisetimecon: <https://edint.es/kos/NoiseTimeConstantType/> .
+@prefix edintnoiseratetype: <https://edint.es/kos/NoiseRateType/> .
+@prefix edintnoisepon: <https://edint.es/kos/NoisePonderation/> .
 
 
 @prefix ex: <http://example.org/> .
