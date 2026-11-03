@@ -46,7 +46,7 @@
         </dcterms:creator>
         <dcterms:description xml:lang="en">A lightweight ontology extending the medioambiente EDIT Ontology to represent noise pollution, restricting their observations to the EDINT SKOS controlled vocabulary.</dcterms:description>
         <dcterms:description xml:lang="es">Una ontología ligera que extiende la ontología EDINT de medioambiente para representar contaminación acústica, restringiendo sus mediciones al vocabulario controlado SKOS de EDINT.</dcterms:description>
-        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <dcterms:title xml:lang="en">EDINT Noise Pollution Ontology</dcterms:title>
         <rdfs:label xml:lang="es">Contaminación Acústica</rdfs:label>
         <rdfs:label xml:lang="en">Noise Pollution</rdfs:label>
