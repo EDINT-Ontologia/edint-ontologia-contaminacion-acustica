@@ -144,7 +144,7 @@
     "@value" : "Environmental Sensors (edintmed)"
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "https://edint.es/def/medioambiente#"
+    "@id" : "https://edint.es/def/medio-ambiente#"
   } ]
 }, {
   "@id" : "_:genid8",
@@ -156,15 +156,6 @@
       "@id" : "_:genid10"
     } ]
   } ]
-}, {
-  "@id" : "http://purl.org/dc/terms/abstract",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/created",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -185,9 +176,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/modified",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/title",
@@ -219,12 +207,6 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#"
   } ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/homepage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://edint.es/def/contaminacion-acustica",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -269,7 +251,7 @@
     "@value" : "2026-09-14"
   } ],
   "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+    "@id" : "https://creativecommons.org/licenses/by-sa/4.0/"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -289,7 +271,7 @@
     "@value" : "edintacus"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "https://edint.es/def/contaminacion-acustica#"
+    "@value" : "https://edint.es/def/contaminacion-acustica#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -299,7 +281,7 @@
     "@value" : "Noise Pollution"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "https://edint.es/def/medioambiente#"
+    "@id" : "https://edint.es/def/medio-ambiente#"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
     "@id" : "https://github.com/EDINT-Ontologia/edint-ontologia-contaminacion-acustica/releases/tag/v0.2.0"
@@ -353,7 +335,7 @@
     "@value" : "Observación acústica"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://edint.es/def/medioambiente#EnvironmentalObservation"
+    "@id" : "https://edint.es/def/medio-ambiente#EnvironmentalObservation"
   } ]
 }, {
   "@id" : "https://edint.es/def/contaminacion-acustica#noiseEmitterPredominantType",
@@ -471,10 +453,10 @@
     "@id" : "_:genid24"
   } ]
 }, {
-  "@id" : "https://edint.es/def/medioambiente#EnvironmentalObservation",
+  "@id" : "https://edint.es/def/medio-ambiente#EnvironmentalObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://edint.es/def/medioambiente#"
+    "@id" : "https://edint.es/def/medio-ambiente#"
   } ]
 }, {
   "@id" : "https://edint.es/kos/NoiseEmitterPredominantType",
@@ -546,34 +528,4 @@
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Ontology Engineering Group, UPM"
   } ]
-}, {
-  "@id" : "https://schema.org/affiliation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://schema.org/codeRepository",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://schema.org/creativeWorkStatus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://schema.org/funding",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/widoco/vocab#jsonldSerialization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/widoco/vocab#ntSerialization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/widoco/vocab#rdfxmlSerialization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/widoco/vocab#turtleSerialization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/widoco/vocab#vocabularyIRI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/widoco/vocab#vocabularyLabel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]

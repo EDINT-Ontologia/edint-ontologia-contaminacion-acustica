@@ -15,7 +15,6 @@
 
 @prefix edintacus: <https://edint.es/def/contaminacion-acustica#> .
 @prefix edintemittertype: <https://edint.es/kos/NoiseEmitterPredominantType/> .
-@prefix edintnoiseratetype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/NoiseRateType/> .
 @prefix edintnoiserefint: <https://edint.es/kos/NoiseReferenceInterval/> .
 @prefix edintnoisetimecon: <https://edint.es/kos/NoiseTimeConstantType/> .
 @prefix edintnoiseratetype: <https://edint.es/kos/NoiseRateType/> .

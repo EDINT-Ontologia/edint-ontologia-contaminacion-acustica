@@ -1,6 +1,6 @@
 <https://edint.es/def/contaminacion-acustica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://edint.es/def/contaminacion-acustica> <http://www.w3.org/2002/07/owl#versionIRI> <https://edint.es/def/contaminacion-acustica/0.2.1> .
-<https://edint.es/def/contaminacion-acustica> <http://www.w3.org/2002/07/owl#imports> <https://edint.es/def/medioambiente#> .
+<https://edint.es/def/contaminacion-acustica> <http://www.w3.org/2002/07/owl#imports> <https://edint.es/def/medio-ambiente#> .
 <https://edint.es/def/contaminacion-acustica> <http://purl.org/dc/terms/abstract> "Esta ontología intenta proporcionar el vocabulario común para representar las principales entidades y datos de sensores y observaciones sobre contaminación acústica. Es una actualización de una <a href=\"https://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html\">versión previa</a> de la ontología, que adapta esa ontología para cubrir los requisitos del Espacio de Datos para las Infraestructuras Urbanas Inteligentes <a href=\"https://edint.es/\">(EDINT)</a>. También amplia la <a href=\"http://vocab.linkeddata.es/datosabiertos/def/medioambiente/\">ontología de medioambiente</a> para el caso de la contaminación acústica."@es .
 <https://edint.es/def/contaminacion-acustica> <http://purl.org/dc/terms/abstract> "This ontology aims to provide the commun vocabulary for representing the main entities and data for sensors and observations on noise pollution. It is an update of a <a href=\"https://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html\">previous version</a>, which adapts that ontology to comply with <a href=\"https://edint.es/\">(EDINT)</a> requirements. It also extends the <a href=\"http://vocab.linkeddata.es/datosabiertos/def/medioambiente/\">Environmental Sensors Ontology</a> for noise pollution. "@en .
 <https://edint.es/def/contaminacion-acustica> <http://purl.org/dc/terms/bibliographicCitation> "EDINT Noise Pollution Ontology. EDINT. Revision: v0.2.1."@en .
@@ -24,7 +24,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" .
 <https://edint.es/def/contaminacion-acustica> <http://purl.org/dc/terms/description> "A lightweight ontology extending the medioambiente EDIT Ontology to represent noise pollution, restricting their observations to the EDINT SKOS controlled vocabulary."@en .
 <https://edint.es/def/contaminacion-acustica> <http://purl.org/dc/terms/description> "Una ontología ligera que extiende la ontología EDINT de medioambiente para representar contaminación acústica, restringiendo sus mediciones al vocabulario controlado SKOS de EDINT."@es .
 <https://edint.es/def/contaminacion-acustica> <http://purl.org/dc/terms/issued> "2026-09-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/contaminacion-acustica> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://edint.es/def/contaminacion-acustica> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> .
 <https://edint.es/def/contaminacion-acustica> <http://purl.org/dc/terms/modified> "2026-09-14"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://edint.es/def/contaminacion-acustica> <http://purl.org/dc/terms/publisher> _:genid6 .
 _:genid6 <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
@@ -33,7 +33,7 @@ _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
 <https://edint.es/def/contaminacion-acustica> <http://purl.org/dc/terms/title> "EDINT Noise Pollution Ontology"@en .
 <https://edint.es/def/contaminacion-acustica> <http://purl.org/dc/terms/title> "Ontología EDINT de Contaminación Acústica"@es .
 <https://edint.es/def/contaminacion-acustica> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintacus" .
-<https://edint.es/def/contaminacion-acustica> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://edint.es/def/contaminacion-acustica#> .
+<https://edint.es/def/contaminacion-acustica> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/contaminacion-acustica#" .
 <https://edint.es/def/contaminacion-acustica> <http://www.w3.org/2000/01/rdf-schema#label> "Contaminación Acústica"@es .
 <https://edint.es/def/contaminacion-acustica> <http://www.w3.org/2000/01/rdf-schema#label> "Noise Pollution"@en .
 <https://edint.es/def/contaminacion-acustica> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-contaminacion-acustica/releases/tag/v0.2.0> .
@@ -46,7 +46,7 @@ _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
 <https://edint.es/def/contaminacion-acustica> <https://w3id.org/widoco/vocab#rdfxmlSerialization> "ontology.rdf" .
 <https://edint.es/def/contaminacion-acustica> <https://w3id.org/widoco/vocab#turtleSerialization> "ontology.ttl" .
 <https://edint.es/def/contaminacion-acustica> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid7 .
-_:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/medioambiente#> .
+_:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/medio-ambiente#> .
 _:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Sensores Medioambientales (edintmed)"@es .
 _:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Sensors (edintmed)"@en .
 # 
@@ -57,15 +57,6 @@ _:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Sensors (ed
 # #
 # #################################################################
 # 
-# 
-# http://purl.org/dc/terms/abstract
-<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/bibliographicCitation
-<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -82,9 +73,6 @@ _:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Sensors (ed
 # http://purl.org/dc/terms/modified
 <http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://purl.org/dc/terms/publisher
-<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -93,42 +81,6 @@ _:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Sensors (ed
 # 
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://xmlns.com/foaf/0.1/homepage
-<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://xmlns.com/foaf/0.1/name
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://schema.org/affiliation
-<https://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://schema.org/codeRepository
-<https://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://schema.org/creativeWorkStatus
-<https://schema.org/creativeWorkStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://schema.org/funding
-<https://schema.org/funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/widoco/vocab#jsonldSerialization
-<https://w3id.org/widoco/vocab#jsonldSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/widoco/vocab#ntSerialization
-<https://w3id.org/widoco/vocab#ntSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/widoco/vocab#rdfxmlSerialization
-<https://w3id.org/widoco/vocab#rdfxmlSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/widoco/vocab#turtleSerialization
-<https://w3id.org/widoco/vocab#turtleSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/widoco/vocab#vocabularyIRI
-<https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/widoco/vocab#vocabularyLabel
-<https://w3id.org/widoco/vocab#vocabularyLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -287,15 +239,15 @@ _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # 
 # https://edint.es/def/contaminacion-acustica#NoiseObservation
 <https://edint.es/def/contaminacion-acustica#NoiseObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://edint.es/def/contaminacion-acustica#NoiseObservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://edint.es/def/medioambiente#EnvironmentalObservation> .
+<https://edint.es/def/contaminacion-acustica#NoiseObservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://edint.es/def/medio-ambiente#EnvironmentalObservation> .
 <https://edint.es/def/contaminacion-acustica#NoiseObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "An observation of a noise property made by a noise sensor"@en .
 <https://edint.es/def/contaminacion-acustica#NoiseObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Una observación de una propiedad acústica realizada por un sensor acústico"@es .
 <https://edint.es/def/contaminacion-acustica#NoiseObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Noise observation"@en .
 <https://edint.es/def/contaminacion-acustica#NoiseObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Observación acústica"@es .
 # 
-# https://edint.es/def/medioambiente#EnvironmentalObservation
-<https://edint.es/def/medioambiente#EnvironmentalObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://edint.es/def/medioambiente#EnvironmentalObservation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://edint.es/def/medioambiente#> .
+# https://edint.es/def/medio-ambiente#EnvironmentalObservation
+<https://edint.es/def/medio-ambiente#EnvironmentalObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/medio-ambiente#EnvironmentalObservation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://edint.es/def/medio-ambiente#> .
 # 
 # 
 # 
