@@ -2,7 +2,7 @@
 
 <!--<span class="markdown">-->
 <div>
-<p>Como se muestra en la Figura 1, esta ontología extiende la <a href="https://edint.es/def/medioambiente/">ontología de medioambiente</a> de EDINT añadiendo cinco propiedades para especificar las características concretas de una <a href="#NoiseObservation">observación de ruido</a>: <a href="#noiseEmitterPredominantType">tipo de emisor de ruido predominante</a>, <a href="#noiseReferenceInterval">intervalo de referencia para ruido</a>, <a href="#noiseRateType">tipo de índice para ruido</a>, <a href="#noisePonderation">ponderación de ruido</a>, y <a href="#noiseTimeConstantType">tipo de constante de tiempo para el ruido</a>, que están conectados a sus conceptos SKOS correspondientes: <a href="https://edint.es/kos/NoiseEmitterPredominantType">tipo de emisor de ruido predominante</a>, <a href="https://edint.es/kos/NoiseReferenceInterval">intervalo de referencia para ruido</a>, <a href="https://edint.es/kos/NoiseRateType">tipo de índice para ruido</a>, <a href="https://edint.es/kos/NoisePonderation">ponderación de ruido</a> y <a href="<https://edint.es/kos/NoiseTimeConstantType">tipo de constante de tiempo para el ruido</a>.
+<p>Como se muestra en la Figura 1, esta ontología extiende la <a href="https://edint.es/def/medio-ambiente#">ontología de medioambiente</a> de EDINT añadiendo cinco propiedades para especificar las características concretas de una <a href="#NoiseObservation">observación de ruido</a>: <a href="#noiseEmitterPredominantType">tipo de emisor de ruido predominante</a>, <a href="#noiseReferenceInterval">intervalo de referencia para ruido</a>, <a href="#noiseRateType">tipo de índice para ruido</a>, <a href="#noisePonderation">ponderación de ruido</a>, y <a href="#noiseTimeConstantType">tipo de constante de tiempo para el ruido</a>, que están conectados a sus conceptos SKOS correspondientes: <a href="https://edint.es/kos/NoiseEmitterPredominantType">tipo de emisor de ruido predominante</a>, <a href="https://edint.es/kos/NoiseReferenceInterval">intervalo de referencia para ruido</a>, <a href="https://edint.es/kos/NoiseRateType">tipo de índice para ruido</a>, <a href="https://edint.es/kos/NoisePonderation">ponderación de ruido</a> y <a href="https://edint.es/kos/NoiseTimeConstantType">tipo de constante de tiempo para el ruido</a>.
 </p>
 
 <p><center><img src="images/diagram.png" style="width:100%;"/><figcaption>
@@ -24,10 +24,13 @@ Figura 1. Modelo conceptual de la ontología</figcaption></center></p>
 @prefix unit: &lt;http://qudt.org/vocab/unit/&gt; .
 @prefix schema: &lt;http://schema.org/&gt; .
 
-@prefix edintmed: &lt;https://edint.es/def/medioambiente/&gt; .
+@prefix edintmed: &lt;https://edint.es/def/medio-ambiente#&gt; .
+@prefix edintacus: &lt;https://edint.es/def/contaminacion-acustica#&gt; .
+@prefix edintkosfoi: &lt;https://edint.es/kos/FeaturesOfInterest/&gt; .
+@prefix ex: &lt;http://example.org/&gt; .
 @prefix edintnoiserefint: &lt;https://edint.es/kos/NoiseReferenceInterval/&gt; .
 @prefix edintnoisepon: &lt;https://edint.es/kos/NoisePonderation/&gt; .
-@prefix edintemittertype: &lt;https://edint.es/kos/EmitterPredominantType/&gt; .
+@prefix edintemittertype: &lt;https://edint.es/kos/NoiseEmitterPredominantType/&gt; .
 
 
 &lt;https://example.org/recurso/observacion/Observation_LAeq_001&gt;
