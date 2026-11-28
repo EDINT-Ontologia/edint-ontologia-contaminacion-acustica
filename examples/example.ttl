@@ -21,7 +21,7 @@
 @prefix edintnoisepon: <https://edint.es/kos/NoisePonderation/> .
 
 
-@prefix ex: <http://example.org/> .
+@prefix ex: <https://example.org/> .
 
 
 # ---------------------------------------------------------------------------
