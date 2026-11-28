@@ -33,6 +33,14 @@ El prefijo de esta ontología es `edintacus` y se publica bajo el espacio de nom
 | **requirements/** | Contiene todos los documentos utilizados para definir los requisitos de la ontología: ejemplos de datos, preguntas de competencia, requisitos funcionales, casos de uso, etc. |
 | **shapes/**       | Contiene los SHACL shapes utilizadas para definir y validar las restricciones de la ontología.                                                                                |
 
+## Relación con ontologías anteriores (Relationship with previous ontologies)
+
+Esta ontología sustituye a la ontología `http://vocab.ciudadesabiertas.es/def/medio-ambiente/contaminacion-acustica`, desarrollada en el proyecto OpenCityData y Ciudades Abiertas (repositorio [opencitydata/vocab-medio-ambiente-contaminacion-acustica](https://github.com/opencitydata/vocab-medio-ambiente-contaminacion-acustica) y [CiudadesAbiertas/vocab-medio-ambiente-contaminacion-acustica](https://github.com/CiudadesAbiertas/vocab-medio-ambiente-contaminacion-acustica)). La ontología anterior está deprecada: sus ficheros la marcan con `owl:deprecated` e indican, término a término, el término de esta ontología que lo sustituye (`dcterms:isReplacedBy`) o el más próximo (`rdfs:seeAlso`). Su URI se mantiene por compatibilidad, pero los datos nuevos deben usar esta ontología.
+
+Las estaciones de medida y las observaciones genéricas que incluía la ontología anterior se modelan ahora en la [Ontología EDINT de Sensores Medioambientales](https://github.com/EDINT-Ontologia/edint-ontologia-medio-ambiente).
+
+*This ontology supersedes the deprecated ontology `http://vocab.ciudadesabiertas.es/def/medio-ambiente/contaminacion-acustica`; the old one keeps its IRIs for backwards compatibility.*
+
 ## Mantenimiento y evolución (Maintenance and evolution)
 
 Para manejar las incidencias o mejoras sugeridas con respecto a la ontología, recomendamos seguir las guías proporcionadas en ([Issues Management](./ISSUES.md)) para generar una incidencia.

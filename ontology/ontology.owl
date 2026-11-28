@@ -81,6 +81,7 @@
                 <rdfs:label xml:lang="en">Environmental Sensors (edintmed)</rdfs:label>
             </rdf:Description>
         </widoco:vocabularyLabel>
+        <dcterms:replaces rdf:resource="http://vocab.ciudadesabiertas.es/def/medio-ambiente/contaminacion-acustica"/>
     </owl:Ontology>
     <foaf:Organization rdf:about="https://oeg.fi.upm.es/">
         <foaf:name>Ontology Engineering Group, UPM</foaf:name>
